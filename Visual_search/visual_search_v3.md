@@ -4,6 +4,12 @@
 
 ---
 
+## **Summary**
+
+Identified that users couldn't efficiently find products matching their spaces due to visual tag noise, while creators dropped off during upload. Led Visual Search initiative to shift discovery from tag quantity to relevance confidence. Repositioned ML feature as Phase 1 of strategic transition, navigating Content team concerns through reframing and guardrail metrics. Phase 2 validation proved hypothesis—fewer, smarter tags increased discovery effectiveness and GMV growth despite tag reduction.
+
+---
+
 ### **Problem**
 
 By 2023, Ohouse's product discovery depended on manual product tags — small "+" icons overlaid on community photos.
