@@ -1,3 +1,34 @@
+Narrative Flow
+
+Open with the personal “mismatched chairs” anecdote to humanize the pain of costly, irreversible decor mistakes and set up the problem.
+Transition to broader insight gathered with user research: even diligent shoppers can’t translate catalog-perfect products into cohesive, livable homes.
+Position the 3D Room Planner turnaround as proof of demand for spatial confidence—7× DAU in 6 months, ~30% higher purchase conversion, 30% same-day buyers versus 10-day norm.
+Vision Gap
+
+Highlight friction: planner helps decisive decorators, but most people still stall before they can compose a full room.
+Frame AI as the missing capability that lowers the threshold from “I have a plan” to “I have a guided vision tailored to my space.”
+AI Product Pillars
+
+Your Room, First: product-detail visuals render items inside the customer’s actual room automatically, no manual staging.
+Contractor Match: interior contractor portfolio shots reimagined in the user’s space to accelerate trust and booking decisions.
+Community Co-Create: AI transforms Q&A posts, sketches, or single photos into visual mockups so helpers and askers align quickly.
+Search from Your Space: photo-led search recommends and auto-places products, delivering personalized discoveries beyond popularity lists.
+Impact Targets
+
+Higher conversion by evaluating items in a faithful digital twin instead of stylized studio shots.
+Shorter purchase cycle as spatial validation happens instantly rather than over ~10 days.
+Faster contractor onboarding with clearer briefs, better fit signals, and reduced back-and-forth.
+Community health uplift via richer, visual exchanges that resolve “lost in translation” threads.
+Next Steps
+
+Draft slide titles for each pillar so they read like benefits (e.g., “See Every Product in Your Space Instantly”).
+Quantify current baselines for conversion/time-to-purchase/contractor handoff to size deltas for the roadmap slide.
+Gather 1–2 user quotes from research to pair with the anecdote and reinforce the repeatable pain point.
+
+
+----Below is raw conversation ----
+
+
 “Is it? And the challenge is, I'm going to move on to the next slide. The challenge is, are you just talking about your dream? We actually have the evidence. So, like, from the 2024, while working on these 3C flywheels, I have the other gut feeling. I have collected a lot of other user insight, working with, collaborating with user research. People are not getting to the dream of their house, because buying a good product doesn't equivalent to you have your dream house. Because people make a mistake, no matter how much they investigate. I mean, their chances are high, because if you try to look at the really fancy drawer, that's your, like, dream drawer, you've been envisioning for a long time. I mean, I can give you an example. Over the corona period, because we were stuck in the house, my wife decided to spend a lot of, spent more bucks on the furniture, especially in the kitchen and the chairs. She got the inspiration, had a lot of different chairs, putting along together, create a mix match. And what we ended up having is mismatch. The chairs wasn't comfortable, it doesn't fit my height, and also the style of the colors. I mean, I complained about it, but it's already done. Done is done. We cannot sell those. I complained to my wife, and I got scolded. I got, I got, she got mad. She got mad at me. So, I know that this problem is real.”
 02:01
 You said:

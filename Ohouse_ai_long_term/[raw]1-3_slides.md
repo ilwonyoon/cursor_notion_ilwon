@@ -1,3 +1,49 @@
+Slide 1 — Where We Started: 3C Flywheel Wins
+Summary (≈150 words)
+In 2024 we pushed the Content-Commerce-Community flywheel to prove Ohouse could create compounding value across the ecosystem. Authentic content—real homes, real reviews—became the anchor that built trust. Community loops tightened because people returned for advice and validation instead of polished brand talk. Commerce flowed naturally from that trust; shoppers saw products living in spaces like theirs and bought with conviction. The result was material: Ohouse reached profitability for the first time in a decade. This slide sets that foundation. It shows we can orchestrate design, product, and community strategy to drive meaningful business outcomes. With the flywheel validated, we earned the right to ask what comes next. The answer isn’t “more of the same,” but rather recognizing where even this success stops short, so we can justify the shift to AI. Establishing the win makes the upcoming pivot credible, not reactive.
+
+Bullet Points
+
+2024 focus on Content–Commerce–Community loops.
+Authentic user homes and reviews became decision assets.
+Trust-driven commerce improved conversion quality.
+Delivered Ohouse’s first profitable year in ten years.
+Validates ability to compound product, brand, and community.
+
+
+Slide 2 — Why Status Quo Isn’t Enough
+Summary (≈150 words)
+Even with the flywheel humming, we saw the ceiling. Buying a product—no matter how well reviewed—doesn’t guarantee a cohesive, livable room. My own experience mirrors countless users: we researched endlessly, bought the “dream” chair, and still ended up with mismatched, uncomfortable spaces. Ten moves later, we’ve thrown out furniture, wasted money, and created avoidable waste. User research confirmed the pattern: diligent planners still misjudge scale, comfort, and harmony once items arrive. Community inspiration and commerce transactions don’t bridge that last mile. So growth hits a wall. Macroeconomic housing headwinds only heighten the risk of stagnation. This slide clarifies the real gap between inspiration and execution. It sets up the need for a new capability that turns intent into confident follow-through. Without solving this friction, the flywheel stays limited. That gap is exactly what motivates the AI chapter.
+
+Bullet Points
+
+Product purchases still lead to mismatched, uncomfortable rooms.
+Personal example: multiple moves, repeated waste despite research.
+User research echoes the inability to compose cohesive spaces.
+Flywheel inspires but doesn’t deliver finished-room confidence.
+Macro headwinds demand a deeper solution to unlock growth.
+
+
+Slide 3 — Ohouse AI: Inspiration to Confident Action
+Summary (≈150 words)
+Here we introduce the GWAS vision: using AI to take a user from spark to confident action. Instead of hunting through catalog-perfect photos, people can describe a problem or upload a room photo and let AI do the heavy lifting. Product detail pages start from their actual space—items are rendered automatically, bridging imagination and reality. Contractor portfolios can be projected into the user’s home, speeding trust and reducing back-and-forth. Community threads transform words or sketches into shared visuals, eliminating misinterpretation. Search evolves into personalized discovery where recommended products already fit the room. This cohesive AI layer closes the gap identified on Slide 2. The outcome is shorter purchase cycles, higher conversion born from accuracy, and better signals for contractors to execute faster. It also reflects my own shift: leaning into IC-level AI building, combining past leadership with hands-on experimentation to deliver this future.
+
+Bullet Points
+
+AI interprets prompts/photos to generate room-tailored plans.
+Product pages render items directly in users’ actual layouts.
+Contractor portfolios reimagined in-home to speed decisions.
+Community Q&A gains instant shared visual context.
+Search becomes personalized, auto-placed product discovery.
+
+
+
+
+
+
+
+--------------------------------------
+
 Skip to content
 You said:
 “Hello.”
