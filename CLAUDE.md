@@ -1,4 +1,4 @@
-# CLAUDE.md - Cursro_notion Repository Guide
+# CLAUDE.md - Cursor_notion Repository Guide
 
 ## Project Overview
 
