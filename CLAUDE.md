@@ -268,6 +268,22 @@ Use the design-portfolio-evaluator Skill (`.claude/design-portfolio-evaluator/SK
 4. Simulate tough interview questions
 5. Suggest company-tier positioning
 
+### Syncing `.claude/` Directory Across Devices
+**IMPORTANT:** All files in `.claude/` (skills, commands, settings) must be committed and pushed to GitHub to sync across devices.
+
+**Workflow for any changes in `.claude/`:**
+```bash
+git add .claude/
+git commit -m "Update [description of skill/command change]"
+git push
+```
+
+**Why this matters:**
+- Skills and custom commands are stored locally in `.claude/`
+- Without Git sync, changes on one device won't appear on others
+- Always treat `.claude/` updates the same as portfolio/case study updates
+- Pull on other devices to get the latest skills and settings
+
 ### For Case Study Development
 Reference `Design_Leadership_Hiring_Framework.md` for structure. Follow the template:
 1. **Opening (Problem)** - Opportunity/problem and why it mattered
