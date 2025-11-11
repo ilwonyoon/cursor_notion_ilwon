@@ -62,22 +62,57 @@ Defines an interactive design leadership portfolio evaluator with:
 
 ---
 
-### `/Ohouse_ai_long_term/[raw]1-3_slides.md`
-**Ohouse AI Pitch - Slides 1-3 with speaker notes (ChatGPT transcript)**
+### `/Portfolio/Ohouse_ai_long_term/` — Ohouse AI Long-Term Vision Case Study
+**Location:** `ohouse_ai_long_v2.md` (primary working version) + `arhives/new.md` (ChatGPT iteration for structure reference)
 
-**Narrative Arc:**
-1. **Slide 1 - 3C Flywheel Win:** Content-Commerce-Community loops drove first profitability in decade. Foundation for credibility.
-2. **Slide 2 - Problem Ceiling:** Buying products ≠ solving cohesive room design. Users face mismatched, uncomfortable spaces despite research. Macro headwinds demand deeper solution.
-3. **Slide 3 - Ohouse AI Vision (GWAS):** AI bridges inspiration → confident action. Users upload photos/describe problems; AI generates room plans, renders products in-place, projects contractor portfolios, transforms community Q&A into shared visuals, personalizes product discovery.
+**Target:** Tier 1-2 companies, IC with Leadership level
 
-**Key Leadership Narrative Elements:**
-- Strategic pivot: Recognized deeper user problem beyond transaction
-- C-level alignment: Secured buy-in for data infrastructure
-- Personal role shift: Moving from managing full design team (user research, brand, UX writing, design system, product design) to IC-level AI product design leadership
-- Rationale: AI literacy now enables one designer to produce outcomes that previously required full team
-- Scope: Focused on AI expansion, not 3C flywheel details
+**CRITICAL INSTRUCTION FOR ALL WORK ON THIS CASE STUDY:**
 
-**Messaging Strategy:** Direct, punchy, data-driven. Focus on business problem → strategic decision → measurable impact. Emphasize director/IC-level strategic thinking, NOT UI implementation details.
+When writing/editing Ohouse AI narrative, you MUST follow this principle:
+
+**Shift narrative from "here's what Ohouse did" to "here's what *I* saw, decided, and drove forward"**
+
+1. **Keep the structural format:** Core Summary + Speaker Script (this is Ilwon's working/editing template)
+2. **Inject YOUR leadership role, contribution, and decision-making** into both sections — make it crystal clear *you* drove this as Head of Product Design
+3. **Infuse your 5 core principles** from `Flavor_of_Me_Prompt.md` throughout:
+   - **Customer first, then systems** — Did you diagnose the customer problem before recommending solution?
+   - **Do the work before leading it** — Show hands-on participation (Room Planner work gave you vantage point)
+   - **System-level thinking** — Did you recognize this needed fundamental redesign, not a feature?
+   - **Self-doubt is strength** — Did uncertainty lead to deeper understanding of user struggles?
+   - **Long-term thinking** — Are you proposing phased, sustained transformation vs. quick wins?
+4. **Make explicit what you did as Head of Product Design:**
+   - Your vantage point (Room Planner team + user research)
+   - Your diagnosis (visualization gap = core problem, not a feature)
+   - Your strategic reframe (system-level opportunity, not product addition)
+   - Your C-level pitch (what you told leadership, why they believed you)
+   - Your conviction (long-term vision for AI-powered visualization at scale)
+
+**The narrative should read:** "I saw this through Room Planner work. I connected dots others missed. I pitched this to leadership as a system-level opportunity. Here's why it matters."
+
+**NOT:** "Ohouse had this problem, so we need AI."
+
+---
+
+**Working Files:**
+- `ohouse_ai_long_v2.md` — Primary version being built section-by-section (Sections 1-7 framework)
+- `arhives/new.md` — ChatGPT iteration showing structural format (Core Summary + Speaker Script pattern)
+
+**Narrative Arc (with leadership focus):**
+1. **Foundation:** What's Ohouse + your understanding of user journey
+2. **Historical credibility:** 3C Flywheel success + *why you understand the business*
+3. **Problem diagnosis:** Why 3C hit ceiling + *what you saw that others didn't*
+4. **Opportunity:** Visualization gap + *your strategic reframe*
+5. **Solutions:** Concrete product vision for AI-powered visualization
+6. **Business Model:** How this unlocks new revenue + long-term defensibility
+7. **Leadership confidence:** Why you're confident in this direction
+
+**Key Success Criteria:**
+- YOUR strategic thinking is visible in every section
+- YOUR 5 core principles show up naturally (not forced)
+- YOUR vantage point (Room Planner experience) is explicitly connected to your diagnosis
+- YOUR conviction about long-term transformation is clear
+- C-level alignment feels earned, not assumed
 
 ---
 
