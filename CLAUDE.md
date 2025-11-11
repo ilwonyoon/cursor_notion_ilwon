@@ -287,6 +287,53 @@ Located in `.claude/design-portfolio-evaluator/SKILL.md` - interactive evaluatio
 - "Update MEMORY: UX_Writing Medium longform outline done, moving to draft"
 - "MEMORY shows PD_in_AI and AI_Native_Team both touch on system thinking - how can I deepen their connection?"
 
+### Dynamic Update Protocol (Prevent Duplicate Insights)
+**Purpose:** Avoid writing the same insight twice in different ways across projects. Use MEMORY as the single source of truth.
+
+**When you discover a NEW INSIGHT:**
+1. Tell me: "New insight: [insight description]"
+2. I will:
+   - Read MEMORY.md immediately
+   - Check if this insight already exists in another project
+   - If it DOES exist:
+     - Alert you: "This connects to [Project name] where we discussed [related insight]"
+     - Suggest approach: "Should we deepen this angle differently, or explicitly connect the projects?"
+   - If it DOESN'T exist:
+     - Confirm it's new
+     - Update MEMORY.md with the new insight
+     - Note which project it came from
+
+**When you're WRITING/EDITING content:**
+1. Tell me: "Working on [Project] - [specific section/goal]"
+2. I will:
+   - Read MEMORY.md first
+   - Identify overlapping insights with other projects
+   - Flag potential overlaps: "This touches on [concept] from [other projects]. Should we..."
+   - Suggest differentiation strategies:
+     - Different application angle
+     - Deeper exploration
+     - Explicit cross-reference
+     - Novel combination with other insights
+
+**Example workflow:**
+```
+You: "I'm writing AI_Native_Team's closing section about leadership philosophy"
+Me: [reads MEMORY] "This connects directly to your Leadership_First_Month_Framework.
+    Also, Brand_2.0 emphasizes 'understand conditions first' which is similar.
+    Should we reference these, or take a completely different angle?"
+
+You: "Reference the framework but differentiate the angle"
+Me: [writes section referencing Leadership_Framework, differentiates approach]
+[edits MEMORY to note this new connection]
+```
+
+**This ensures:**
+- ✅ No insight appears twice in the same way
+- ✅ Cross-project connections are explicit and intentional
+- ✅ MEMORY stays as single source of truth
+- ✅ Each project has unique angle/application
+- ✅ Your thinking builds on itself rather than repeating
+
 ### For Portfolio Refinement
 Use the design-portfolio-evaluator Skill (`.claude/design-portfolio-evaluator/SKILL.md`) for interactive feedback on case studies. It will:
 1. Ask clarifying questions about target companies/roles
