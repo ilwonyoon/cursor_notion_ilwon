@@ -260,6 +260,33 @@ Located in `.claude/design-portfolio-evaluator/SKILL.md` - interactive evaluatio
 
 ## Working With Claude
 
+### Using MEMORY.md for Context (CRITICAL)
+**MEMORY.md is your personal knowledge RAG** - read it at the start of each session for context.
+
+**What it contains:**
+- Core principles underlying all your work
+- Knowledge map of all projects (Portfolio + Thought Leadership)
+- Cross-project insights and connections
+- Your leadership philosophy
+- Current direction and next actions
+
+**How to use it:**
+1. **Session start:** Request me to read MEMORY.md (I'll do this automatically if you mention it)
+2. **Need context on a project:** "Check MEMORY for [project name]"
+3. **New insight discovered:** "Update MEMORY with [new insight]"
+4. **Project version completed:** "Update MEMORY - [Project] now v[n]"
+
+**Why MEMORY matters:**
+- Token efficient (~1,100 characters) - loads quickly every session
+- Semantic rich - enables RAG across your projects
+- Self-referential - projects understand their connections
+- Foundation for all work decisions
+
+**Example interactions:**
+- "I'm working on AI_Native_Team LinkedIn series - refresh my MEMORY first"
+- "Update MEMORY: UX_Writing Medium longform outline done, moving to draft"
+- "MEMORY shows PD_in_AI and AI_Native_Team both touch on system thinking - how can I deepen their connection?"
+
 ### For Portfolio Refinement
 Use the design-portfolio-evaluator Skill (`.claude/design-portfolio-evaluator/SKILL.md`) for interactive feedback on case studies. It will:
 1. Ask clarifying questions about target companies/roles
