@@ -110,6 +110,15 @@ If they want to dig deeper on a single issue, ask follow-up questions:
 - What team members would say
 - Values/principles in action
 
+**For Ilwon's portfolios specifically, evaluate against her 5 Core Principles:**
+1. **Customer first, then systems** — Does the story show deep customer understanding before redesign?
+2. **Do the work before leading it** — Is there evidence of hands-on participation and credibility-building?
+3. **System-level thinking** — Does she recognize when partial changes won't work? Does she advocate for full redesign?
+4. **Self-doubt is strength** — Does uncertainty lead to empathy and better decisions?
+5. **Long-term thinking** — Does the approach show phased, sustained transformation vs. quick wins?
+
+When evaluating her work, ask: "Do these 5 principles show up in how she tells this story?"
+
 ### Role-Level Fit
 - **Leadership roles:** Team development, culture, succession planning
 - **IC roles:** Execution capability AND strategic influence
