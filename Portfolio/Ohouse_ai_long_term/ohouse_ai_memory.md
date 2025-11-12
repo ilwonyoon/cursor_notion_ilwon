@@ -103,14 +103,36 @@ Knowledge consolidation from months of Ohouse AI strategy discussions. Each them
 
 ---
 
+## 15. Room Planner (RP): Product-Market Fit & Scaling Signal
+**Summary:** Room Planner achieved strong PMF (40min dwell vs 8min platform avg, 40% monthly retention) but faces scaling bottleneck due to tool complexity. Key insight: impulse purchase metric (30% of RP revenue = first-time discovery → purchase within 24h) proves that digital twin visualization drives confident action. This is the core validation for why AI-powered photo→3D workflow is necessary to scale.
+
+**Key Metrics:**
+- **Growth:** 24년 상반기 31M원 → 하반기 110M원 → 25년 상반기 400M원 (13배 YoY)
+- **Engagement:** 40분 평균 사용시간 (5x platform average), 40% monthly retention
+- **Revenue Impact:** ARPU 76% increase (643.86원 → 1,134.98원), ARPPU 36% increase (128K → 175K 원)
+- **Impulse Purchase:** 30% of RP revenue comes from first discovery → purchase within 24h (없었던 상품을 RP에서 처음 발견하고 즉시 구매)
+- **Category Leaders:** 거울류(20%), 화장대(15%), 수납장(4%) contribution to GMV
+- **User Behavior:** 20% actively use measuring tool for accuracy; primary goal = "실제 내 방의 배치 실험"
+
+**Scaling Challenge:** Heavy tool requiring furniture planning knowledge + technical proficiency = limits scale. Only intensive users (heavy engagement) sustain high retention.
+
+**AI Solution Rationale:** Photo → voice description → 3D RP → easy refinement removes blank canvas problem. Users start from *their actual space* (not imaginary), making tool accessible to non-power-users while maintaining high conversion quality.
+
+**Strategic Insight:** RP's impulse purchase metric (30%) is the strongest proof that "visualization = confidence = action." Ohouse AI amplifies this by making RP accessible to 10x more users.
+
+**Source files:** 19_rp.md (newer conversation consolidating RP performance data)
+
+---
+
 ## Quick Navigation by Pitch Section
 
 **If writing about:** → **Reference these themes:**
-- User problem & positioning → 1, 2, 4, 9
-- Market opportunity & proof → 3, 14, 7
-- Business model & revenue → 5, 6, 7
+- User problem & positioning → 1, 2, 4, 9, **15**
+- Market opportunity & proof → 3, 14, 7, **15**
+- Product validation & PMF → **15**, 4, 13
+- Business model & revenue → 5, 6, 7, **15**
 - Execution & team → 8, 11, 9
-- Leadership narrative & ROI → 10, 5, 13
+- Leadership narrative & ROI → 10, 5, 13, **15**
 - Risks/reality check → 12, 3
 
 ---
