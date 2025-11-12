@@ -48,52 +48,126 @@ This understanding — that home decoration isn't a transaction, it's a journey 
 
 
 
-🔹 [Slide 2 – From User Journey to 3C Flywheel]
+🔹 [Slide 1.5 – Three Years of Strategic Evolution: From Understanding to System Design]
 
-사용자 여정의 인사이트가 곧 우리의 성장 구조가 되다
-
-⸻
-
-🧭 1️⃣ Core Summary — Why This Bridge Exists
-
-• 사용자 여정을 깊이 이해하면서, 오늘의집이 가치를 창출하는 세 축이 명확해졌다.
-→ 콘텐츠(Content), 커뮤니티(Community), 커머스(Commerce) 가 하나의 플라이휠로 작동하며,
-사용자의 "영감 → 확신 → 실행" 여정을 완성시키는 구조였다.
-
-• 'Community'는 단순한 UGC 공간에서, 실질적인 결정 지원 레이어로 진화했다.
-→ 사용자들은 완성된 공간만 보고 싶어하지 않았다.
-→ 오히려 "그 공간을 만든 사람이 나의 질문에 답해주는 경험"을 원했다.
-→ 이를 통해 오늘의집은 영감을 주는 플랫폼에서 문제를 함께 해결하는 플랫폼으로 전환했다.
-
-• 이 3C Flywheel은 BEP 달성을 위한 운영 전략으로 수립되었다.
-→ 영감과 실행을 이어주는 사용자 루프를 강화해
-→ 자연스럽게 인게이지먼트와 전환율을 높이고,
-→ 사용자 가치와 비즈니스 성과를 일치시켰다.
+사용자를 더 잘 돕기 위해, 회사의 전략이 어떻게 진화했는가
 
 ⸻
 
-🗣️ 2️⃣ Speaker Script (with highlights)
+🧭 1️⃣ Core Summary — The Evolution of Ohouse Strategy: Four Projects, One Question
 
-"Understanding this user journey made it clear where Ohouse truly creates value —
-through content, community, and commerce working as one flywheel.
+• 사용자 여정을 이해한 후, 나는 한 가지 질문을 계속 물었다:
+→ "이 여정을 우리는 어떻게 더 잘 지원할 수 있을까?"
 
-Each layer supports a different part of the user journey:
-content inspires, community provides real human guidance,
-and commerce enables confident execution.
+• 3년간 4개의 전사 단위 프로젝트를 리드했고, 각각이 이 질문에 대한 답이었다:
 
-This flywheel wasn't a new invention — it was an operational strategy
-built to reinforce what already worked and help us reach BEP.
-By strengthening how users move from inspiration to confident action,
-we aligned user success with business success —
-setting the stage for the next evolution: Ohouse AI."
+	1️⃣ Lifestyle Expansion
+	→ 실패: 사용자 문제가 아닌 비즈니스 욕심으로 움직임
+	→ 배운 점: 확장이 아니라 깊이가 필요하다
+
+	2️⃣ Content-Centric / Ohouse 2.0
+	→ 재설계: 콘텐츠 자체를 사용자 결정의 도구로 재구성
+	→ 배운 점: 정보 구조를 바꾸면 사용자 행동이 달라진다
+
+	3️⃣ 3C Flywheel
+	→ 시스템 통합: 콘텐츠, 커뮤니티, 커머스를 하나의 여정으로 재설계
+	→ 배운 점: 각 단계를 분리가 아닌 연결로 생각해야 한다
+
+	4️⃣ Ohouse AI
+	→ 다음 차원: 시각화가 부족한 부분을 AI로 채우기
+	→ 배운 점: 사용자 여정의 각 단계에는 다른 장벽이 있다
+
+• 패턴이 명확했다:
+→ 매해, 사용자가 어디서 더 이상 나아가지 못하는지 진단하고
+→ 회사의 강점으로 그 부분을 재설계하는 것이었다.
+→ 이것이 내 리더십의 방식이다: **사용자 여정 → 회사 전략 수립 → 시스템 재설계**
+
+⸻
+
+🗣️ 2️⃣ Speaker Script (~60 sec)
+
+"Understanding the user journey was the start, but it raised a bigger question: how could we systematically help users move through each stage with more confidence?
+
+Over three years, I led four company-wide initiatives through Product Design and UX Research teams, each one exploring a different part of that question.
+
+First, we tried Lifestyle Expansion — expanding into new categories. That failed because we were solving a business problem, not a user problem. But it taught us something crucial: we needed depth, not breadth.
+
+Then came Content-Centric redesign — restructuring how information was presented. We learned that changing the structure of information changes how users make decisions.
+
+Next was the 3C Flywheel — integrating content, community, and commerce as one continuous journey instead of separate channels. That showed us the power of systemic thinking.
+
+And now, Ohouse AI — addressing the visualization gap we discovered when the 3C structure plateaued.
+
+Each project was driven by the same lens: diagnose where users get stuck, then redesign the system to help them through. That's how I think about strategy as a design leader."
 
 ⸻
 
 📌 3️⃣ Key Bullet Points (for visual slide)
 
-• User insight → Business structure: Content + Community + Commerce as one flywheel
-• Community evolved from showcase to decision-making partner
-• System strengthening aligned user success with business profitability (BEP)
+• Four projects over 3 years: Each one answered "How do we support this stage better?"
+• Pattern recognition: Diagnose user friction → Redesign system architecture → Measure impact
+• Leadership approach: User journey → Company strategy → Systemic implementation
+
+
+
+🔹 [Slide 2 – From Failure to Strategy: Return to User-Centric Design]
+
+실패가 가르쳐준 원점 회귀 — 사용자가 원하는 문제를 풀어야 한다
+
+⸻
+
+🧭 1️⃣ Core Summary — Learning from Lifestyle Expansion: Redefining Our Focus
+
+• Lifestyle Expansion의 실패가 가르쳐준 것:
+→ 우리는 사용자의 문제를 풀지 않고, 비즈니스 확장 욕심으로 움직였다. (인테리어 유저가 증가하지 않으니 다른 카테고리 확장)
+→ 결과: 소비자는 외면했다.
+→ **깨달음:** "결국 사용자가 원하는 문제를 풀어야 한다."
+
+• 그래서 질문을 바꿨다:
+→ "뭘 확장할 것인가?" ❌
+→ "오늘의집 사용자가 정말 원하는 경험은 무엇인가?" ✓
+
+• Product Design과 UXR을 함께 이끌며, 사용자 인사이트에 깊이 있게 집중했다.
+→ 사용자는 오늘의집을 어떻게 인지하는가
+→ 무엇을 좋아하고, 무엇을 원하지 않는가
+→ 어느 단계에서 더 나아가고 싶어 하는가
+
+• 분석이 보여준 역설:
+→ 사용자 수는 많고, 비즈니스 메트릭도 자라고 있었다. ✓
+→ **BUT:** 대부분의 사용자가 원하는 단계에 도달하지 못했다. ✗
+→ 해결책은 새로운 확장이 아니라, **현재 사용자를 깊이 있게 지원하는 것**이었다.
+
+• 2024년에 집중할 영역을 선정했고, 그 결과가 3C Flywheel이다.
+→ 콘텐츠(Content), 커뮤니티(Community), 커머스(Commerce) 를 하나의 플라이휠로 재설계
+→ 사용자의 "영감 → 확신 → 실행" 여정을 완성시키는 시스템으로 구성
+→ 이건 새로운 발견이 아니라, **사용자 중심으로의 원점 회귀**였다.
+
+⸻
+
+🗣️ 2️⃣ Speaker Script (with highlights)
+
+"Before I talk about the 3C Flywheel, let me be honest about where it came from.
+
+We tried Lifestyle Expansion — expanding into new categories beyond interior design — because interior user growth had plateaued. But users rejected it. That failure taught us something fundamental: we were solving a business problem, not a user problem.
+
+So I completely changed the question. Instead of asking 'what should we expand into,' I asked 'what does the Ohouse user actually want?' I led the Product Design and UX Research teams to dive deep into that question. We analyzed how users perceive Ohouse, what they love, what they resist, and where they're stuck in their journey.
+
+What we found was a contradiction:
+We had lots of users. Our business metrics were growing. Yet most users weren't reaching the stage where they felt confident and ready to execute.
+
+That insight changed everything. We didn't need to add more. We needed to support the users we already had, at a deeper level.
+
+That's when the 3C Flywheel emerged — not as a discovery, but as a deliberate redesign. Content to inspire, Community to guide, Commerce to execute. A system built around helping users move from inspiration to confident action.
+
+This wasn't a new invention. It was a return to first principles: focus on what the user actually wants."
+
+⸻
+
+📌 3️⃣ Key Bullet Points (for visual slide)
+
+• Failure taught first principle: Solve user problems, not business expansion desires
+• Discovered contradiction: Growing metrics but users stuck at execution stage
+• Redesigned for depth, not breadth: 3C Flywheel as deliberate system architecture
 
 
 
