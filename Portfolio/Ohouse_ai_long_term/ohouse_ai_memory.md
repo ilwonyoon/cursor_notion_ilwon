@@ -137,8 +137,24 @@ Knowledge consolidation from months of Ohouse AI strategy discussions. Each them
 
 ---
 
+## 16. Competitive Differentiation vs. Generic AI Design Tools
+**Summary:** Generic AI design tools (competitors) excel at concept generation and style transfer but structurally fail on core problems. Ohouse AI's integrated infrastructure (photo analysis + Room Planner + real catalog) solves 3 critical gaps competitors cannot replicate:
+
+1. **Lifestyle Understanding through Photo Analysis** - Reverse-engineer user's actual living patterns (furniture longevity preference, open space priority, storage needs) from space choices, not abstract "what's your style?" quiz responses
+
+2. **Accurate Spatial Scale via Room Planner** - Guarantee true-to-life measurements (not "surprise when it arrives"), eliminating the endemic scale accuracy failure that plagues competitors. Room Planner's 20% user adoption of measuring tool proves users prioritize accuracy.
+
+3. **Whole-Home Coherence Infrastructure** - Multi-room photo analysis + real integrated product catalog enables color/material consistency across spaces. Competitors cannot match this without dedicated inventory system; requires B2B infrastructure Ohouse already possesses.
+
+**Why This Matters for Part 2 Strategy:** These aren't "nice-to-haves." They're structural impossibilities for LLM-first tools or generic design platforms. Ohouse's defensibility comes from: (a) photo-to-constraint mapping expertise, (b) Room Planner integration, (c) real product database with durability signals. Replicating requires building the entire Ohouse infrastructure stack—not just better AI.
+
+**Source files:** spacesbydee.com article analysis + Room Planner usage data
+
+---
+
 ## Key Crosslinks
 - **Visualization Gap (1)** connects to **Technology (2)** and **Product Vision (4)**
 - **Market Data (3)** validates **Business Model (5)** and **B2B Strategy (7)**
 - **3C Flywheel (9)** is the execution vehicle for **Go-to-Market (8)** and **Community (6)**
 - **Challenges (12)** shape **Monetization decisions (5)** and **GTM prioritization (8)**
+- **Competitive Moat (16)** justifies **Product Architecture (2)** and **B2B Strategy (7)** - partners can't build this alone

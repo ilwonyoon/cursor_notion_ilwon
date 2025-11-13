@@ -15,6 +15,11 @@ Persona clarity is the linchpin for cross-functional alignment and decision-maki
 **Ohouse_AI** (v6)
 Recognized deeper user problem beyond transaction. Strategic pivot: buying products ≠ solving cohesive room design. Got C-level buy-in for data infrastructure investment. Transitioned from managing full design team to IC-level AI product design leadership. One designer empowered with right AI infrastructure achieves outcomes that previously required full team. System architecture enables force multiplication.
 
+**Competitive Differentiation vs. Generic AI Design Tools:**
+1. **Lifestyle Understanding through Photo Analysis** - Reverse-engineer user's actual living patterns from space choices (furniture longevity, open space preference, storage constraints) rather than asking abstract "what's your style?" questions
+2. **Accurate Spatial Scale via Room Planner** - Guarantee true-to-life measurements (not "surprise when it arrives"), eliminating the scale accuracy failure endemic to competitors
+3. **Whole-Home Coherence Infrastructure** - Multi-room upload + real product catalog enables color/material consistency across spaces, something competitors structurally cannot match without integrated inventory system
+
 **Visual_Search** (v3)
 [Core insight pending - need to review latest version for key takeaway]
 
