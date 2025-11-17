@@ -250,18 +250,24 @@ This document covers only:
 **Goal:** Capture what feels most lacking or frustrating in the current space
 
 **Copy:**
-- **Title:** "What feels most lacking in this space right now?"
-- **Subtitle:** "Choose the one that feels most true"
+- **Title:** "What's most lacking right now?"
+- **Subtitle:** "Pick the one that feels true"
 
 **Interaction:** Single-select chips
 
 **Example Options (Living Room Prototype):**
-- It feels too empty
-- It doesn't feel cozy enough
-- Storage & organization is hard
-- Light / curtains are not right
-- It doesn't feel kid-friendly
-- I feel shy inviting guests
+- Feels too empty
+- Doesn't feel cozy
+- Storage & organization
+- Lighting & windows
+- Not kid-friendly
+- Hesitant to have guests
+
+**Copy Rationale:**
+- **"What's most lacking right now?"** – Direct, concise (25 chars), validates frustration without judgment
+- **"Pick the one that feels true"** – Matches Q1 subtitle style, simpler language
+- **Consistent option format** – All parallel structure, balance of feeling-based and objective language
+- **Clearer language** – "Lighting & windows" more specific than "Light / curtains are not right"
 
 **Data Model:**
 - **Field:** `SpacePain`
