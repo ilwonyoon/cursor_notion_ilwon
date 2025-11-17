@@ -151,19 +151,7 @@ This document covers only:
 
 *Show us a photo of your room, and AI will discover items that match your taste, then help you see how they'd look in your space.*
 
-*Ready? Let's snap a photo."*
-
-**Copy Rationale:**
-- **"feel like you"** – honest promise that resonates with personal taste, avoids "transform" which overpromises
-- **"match your taste"** – personalization signal without generic language
-- **"see how they'd look"** – concrete value: visualization + confidence
-- **"Ready?"** – collaborative tone, not interrogative
-
-**Design Pattern:**
-- Simple heading or hero message
-- Optional: light icon or subtle animation
-- Single CTA button: "Take a Photo" or "Choose from Gallery"
-- Dismissible or auto-transitions after brief display
+*Ready? Let's snap a photo or upload from your gallery."*
 
 ---
 
@@ -199,13 +187,16 @@ This document covers only:
 
 **Components:**
 - Visual loader (e.g., animated icon or subtle progress indicator)
-- Short helper copy:
+- Context message:
+  - *"While we understand your room, let me ask a couple of questions to get to know you better."*
+- Short helper copy (mid-loading):
   - *"We're understanding your living room…"*
   - *"Analyzing your room and layout…"*
 
 **Key principle:** The loader and questions should appear on the same screen so the user understands that:
 - The system is working
 - Their answers will help improve the result
+- They're part of a collaborative process, not just waiting
 
 ---
 
@@ -214,18 +205,23 @@ This document covers only:
 **Goal:** Understand how the user wants to use this space in their daily life
 
 **Copy:**
-- **Title:** "What kind of space do you want?"
-- **Subtitle:** "You can choose up to 2"
+- **Title:** "What would you do here?"
+- **Subtitle:** "Choose up to 2 that fit you best"
 
 **Interaction:** Chip-style multi-select, maximum 2 selections
 
 **Example Options (Living Room Prototype):**
-- Family relaxation space
-- A place to host guests
-- Kids' play zone
-- TV & movie space
-- Home café & conversation
-- Work & study corner
+- Unwind with family
+- Have friends over
+- Kids' playtime
+- Movie nights
+- Coffee & chat
+- Study & work
+
+**Copy Rationale:**
+- **"What would you do here?"** – Activity-based framing helps users visualize real usage
+- **"Fit you best"** – Empowering language that validates their actual lifestyle
+- **Consistent option format** – All options use "verb + context" for easy scanning and selection
 
 **Data Model:**
 - **Field:** `SpaceRole`
