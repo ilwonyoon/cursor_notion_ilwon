@@ -257,8 +257,6 @@ This document covers only:
 - **Consistent option format** – All parallel structure, balance of feeling-based and objective language
 - **Clearer language** – "Lighting & windows" more specific than "Light / curtains are not right"
 
-
-
 **UX Notes:**
 - Options should be phrased in user language, not design jargon
 - The emotional tone should be empathetic, not judgmental
@@ -277,70 +275,97 @@ This document covers only:
 **Skipping Behavior:**
 - Allow the user to skip each question (e.g., "Skip for now")
 - If both are skipped:
-  - `SpaceRole` and `SpacePain` remain empty / null
-  - Downstream logic (Part 2) will fall back to generic defaults
+  - SpaceRole and SpacePain remain empty / null
+  - Downstream logic will fall back to generic defaults
 
 **Partial Answers:**
-- **If only Q1 is answered:** Use `SpaceRole` for downstream logic, leave `SpacePain` null
-- **If only Q2 is answered:** Use `SpacePain`, and treat Role as unknown
+- **If only Q1 is answered:** Use SpaceRole for downstream logic, leave SpacePain null
+- **If only Q2 is answered:** Use SpacePain, and treat Role as unknown
 
 **Completion:**
 - When analysis is done and the questions are answered or skipped:
-  - Proceed to Part 2 entry point (category selection and personalized shopping home)
+  - Proceed to Part 2 entry point
 
 ---
 
-## Data & Analytics (Part 1)
+### Step 4 – Analysis Complete & Recommendation Message
 
-### Events to Track
+**Entry Condition:** Part 1 analysis is complete, questions answered or skipped
 
-**Key questions:**
-- Can users answer these questions easily during loading?
-- Do the questions create friction?
+**Goal:** Present AI analysis insights + room improvement suggestions based on photo + user intent
 
-**Minimum events:**
-- `ai_space_onboarding_start` – user starts the Ohouse AI space onboarding flow
-- `ai_space_photo_uploaded` – photo upload completed
-- `ai_space_q1_role_answered` – with selected options
-- `ai_space_q2_pain_answered` – with selected option
-- `ai_space_q1_skipped` / `ai_space_q2_skipped`
-- `ai_space_analysis_complete` – analysis finished
-- `ai_space_onboarding_part1_complete` – user transitions to Part 2
+**Content:**
+- Analysis complete confirmation
+- Room photo with key insights (what AI detected)
+- Personalized message based on SpaceRole + SpacePain
+- Overview of improvement suggestions
 
-### Metrics to Observe (for Learning)
+**Example Message:**
 
-- % of users who answer Q1
-- % of users who answer Q2
-- % of users who skip both
-- Time to first answer
-- Drop-off rate during analysis
+*"Here's what we found in your living room:*
 
-**Note:** These are not hard KPIs yet but should inform whether:
-- The questions are understandable
-- The load-time UX feels acceptable or needs adjustment
+*Your space is about 250 sq ft with good natural light, but feels empty in the middle zone.*
+
+*Based on you wanting to unwind with family and the room feeling too bare, we suggest:*
+- *Adding soft textures (rugs, throws) to make it cozier*
+- *Layering lighting to warm up dark corners*
+- *Strategic furniture pieces to fill the empty middle zone"*
 
 ---
 
-## Edge Cases & Constraints (Part 1)
+### Step 5 – Category Selection
 
-### Edge Cases
+**Entry Condition:** User has reviewed analysis and improvement suggestions
 
-| Edge Case | Handling |
-|-----------|----------|
-| **User cancels upload mid-way** | Return to previous screen without storing partial data |
-| **Poor or invalid photo** | For the prototype, show a lightweight error and let the user retry |
-| **Analysis takes longer than expected (e.g., > 25s)** | Keep loader running, ensure the user can still answer or skip questions, and show a soft message like *"This is taking a bit longer than usual."* |
-| **User leaves before completing onboarding** | Save `SpaceRole` and `SpacePain` data captured so far; allow resumption |
+**Goal:** Let user choose which product categories to focus on for this room
+
+**Copy:**
+- **Title:** "Which categories matter most for your living room?"
+- **Subtitle:** "Pick up to 5. We'll create a personalized shopping page just for this room."
+
+**Example Categories (Living Room):**
+- Cushions & cushion covers
+- Throws & blankets
+- Rugs & carpets
+- Curtains & blinds
+- Floor & table lamps
+- Wall art & frames
+- Decorative objects
+- Indoor plants & planters
+- Sofa tables & coffee tables
+- Lounge / accent chairs
+- TV stands & media units
+- Sideboards & consoles
+
+**Interaction:**
+- Multi-select with visible counter: "X of 5 selected"
+- Primary CTA: "Create my shopping page" (enabled when ≥1 selected)
+- Toast on 6th tap: "You can choose up to 5 categories"
 
 ---
 
-## Future Considerations (Beyond Part 1)
+### Step 6 – Personalized Shopping Home
 
-- **Multi-space support:** Extend onboarding flow to handle Bedroom, Home Office, Kitchen, etc.
-- **Space-type contextualization:** Customize Q1 and Q2 options based on space type
-- **Smart defaults:** Infer space type from photo if possible (e.g., detect bed → Bedroom)
-- **Advanced analytics:** User segment analysis based on Role + Pain combinations
-- **Progressive disclosure:** Surface follow-up questions in Part 2 based on Part 1 answers
+**Entry Condition:** User has selected 1-5 categories
+
+**Goal:** Show curated product recommendations aligned with room analysis + selected categories
+
+**Page Structure:**
+
+1. **Top context** – Room photo + room label + personalization subtitle
+2. **Starter grid** – 4 high-priority product tiles (aligned with analysis + selections)
+3. **Category carousels** – One horizontal carousel per selected category
+4. **Smart recommendations** – Additional categories suggested by AI (e.g., storage if room is cluttered)
+5. **Inline personalization** – Optional lightweight questions (budget, household type)
+
+**Example Subtitle:**
+*"Making your living room cozier for family time. Filtered by your selections."*
+
+**Carousel Example – If user selected "Rugs & Carpets":**
+
+*Title:* "Soft rugs to anchor your family zone"
+*Subtitle:* "Warm, durable, easy to clean."
+*Content:* 4-6 product cards in horizontal scroll
 
 ---
 
