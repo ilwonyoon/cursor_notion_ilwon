@@ -223,18 +223,6 @@ This document covers only:
 - **"Fit you best"** – Empowering language that validates their actual lifestyle
 - **Consistent option format** – All options use "verb + context" for easy scanning and selection
 
-**Data Model:**
-- **Field:** `SpaceRole`
-- **Type:** Array of enums
-- **Max length:** 2
-- **Possible values (extensible by space type):**
-  - `FAMILY_RELAX`
-  - `HOST_GUESTS`
-  - `KIDS_PLAY`
-  - `TV_MOVIE`
-  - `CAFE_CHAT`
-  - `WORK_STUDY`
-  - *(Other roles for different space types in future iterations)*
 
 **UX Notes:**
 - Chips should be ordered so the most common roles appear first
@@ -269,17 +257,7 @@ This document covers only:
 - **Consistent option format** – All parallel structure, balance of feeling-based and objective language
 - **Clearer language** – "Lighting & windows" more specific than "Light / curtains are not right"
 
-**Data Model:**
-- **Field:** `SpacePain`
-- **Type:** Enum
-- **Possible values (extensible by space type):**
-  - `TOO_EMPTY`
-  - `NOT_COZY`
-  - `STORAGE_HARD`
-  - `LIGHT_ISSUE`
-  - `NOT_KID_FRIENDLY`
-  - `EMBARRASSED_TO_HOST`
-  - *(Other pain points for different space types in future iterations)*
+
 
 **UX Notes:**
 - Options should be phrased in user language, not design jargon
