@@ -140,15 +140,24 @@ This document covers only:
 **Goal:** Set a friendly, approachable tone and signal what's about to happen
 
 **Copy & Tone:**
-- Keep it short and casual (1-2 sentences max)
+- Keep it short and casual (conversational, like advice from a friend)
 - Signal the AI is here to help, not interrogate
-- Set expectation: photo → AI analysis → personalization
+- Set realistic expectations without overpromising
 - Space-agnostic but can be contextual (e.g., "living room" for living room prototype)
 
-**Examples:**
-- *"Hey! Let's make your space amazing. First, snap a photo."*
-- *"Ready to transform this space? Show me what you're working with."*
-- *"Let's find the perfect pieces for your space. First, let's see it."*
+**Primary Message:**
+
+*"Hey! Let's find pieces that actually feel like you.*
+
+*Show us a photo of your room, and AI will discover items that match your taste, then help you see how they'd look in your space.*
+
+*Ready? Let's snap a photo."*
+
+**Copy Rationale:**
+- **"feel like you"** – honest promise that resonates with personal taste, avoids "transform" which overpromises
+- **"match your taste"** – personalization signal without generic language
+- **"see how they'd look"** – concrete value: visualization + confidence
+- **"Ready?"** – collaborative tone, not interrogative
 
 **Design Pattern:**
 - Simple heading or hero message
@@ -174,9 +183,9 @@ This document covers only:
 
 ---
 
-### 6.2 Step 2 – Space Analysis & Question Capture
+### 6.2 Step 2 – Room Analysis & Question Capture
 
-**State:** AI is analyzing the uploaded space photo (target: 15–20 seconds)
+**State:** AI is analyzing the uploaded room photo (target: 15–20 seconds)
 
 #### Overall UX Principles
 
@@ -192,7 +201,7 @@ This document covers only:
 - Visual loader (e.g., animated icon or subtle progress indicator)
 - Short helper copy:
   - *"We're understanding your living room…"*
-  - *"Analyzing your space and layout…"*
+  - *"Analyzing your room and layout…"*
 
 **Key principle:** The loader and questions should appear on the same screen so the user understands that:
 - The system is working
