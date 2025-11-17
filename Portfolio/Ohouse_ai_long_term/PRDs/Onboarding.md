@@ -1,6 +1,6 @@
 # PRD: Ohouse AI – Space Personalization Onboarding & Intent Capture (Prototype, Part 1)
 
-## 1. Product Overview
+## Product Overview
 
 **Feature Name:** Ohouse AI – Space Personalization Onboarding & Intent Capture (Prototype, Part 1)
 
@@ -27,9 +27,9 @@ This document covers only:
 
 ---
 
-## 2. Problem & Opportunity
+## Problem & Opportunity
 
-### 2.1 User Problems
+### User Problems
 
 **Users see many beautiful spaces online but struggle to:**
 - Translate those ideas to their own space
@@ -42,7 +42,7 @@ This document covers only:
 - Users don't want to fill long forms before seeing value
 - They are especially sensitive to friction right after upload
 
-### 2.2 Opportunity
+### Opportunity
 
 **Use the AI analysis waiting time (15–20 seconds) as a natural moment to:**
 1. Ask two simple questions about how they want to use their space
@@ -59,9 +59,9 @@ This document covers only:
 
 ---
 
-## 3. Goals & Non-goals
+## Goals & Non-goals
 
-### 3.1 Goals (Part 1)
+### Goals (Part 1)
 
 1. **Low-friction onboarding** – Let users upload a space photo and answer 2 questions without feeling like they are filling a form
 
@@ -75,7 +75,7 @@ This document covers only:
 
 4. **Validate UX feasibility** – Confirm that users can comfortably answer 2 questions in ~15–20 seconds without confusion or drop-off
 
-### 3.2 Non-goals (Part 1)
+### Non-goals (Part 1)
 
 - Defining or implementing category selection UI
 - Designing the personalized space shopping home
@@ -87,15 +87,15 @@ This document covers only:
 
 ---
 
-## 4. Target Users & Use Cases
+## Target Users & Use Cases
 
-### 4.1 Target Users
+### Target Users
 
 - **Age:** 20–40
 - **Context:** Has or is setting up a space with basic furniture (e.g., sofa, TV stand, bed, desk)
 - **Pain:** Feels that the space is empty, unfinished, or not comfortable/functional enough
 
-### 4.2 Key Use Cases (for Part 1 – Living Room Prototype)
+### Key Use Cases (for Part 1 – Living Room Prototype)
 
 | Use Case | Scenario |
 |----------|----------|
@@ -107,7 +107,7 @@ This document covers only:
 
 ---
 
-## 5. User Flow (Part 1)
+## User Flow (Part 1)
 
 ```
 1. Start Ohouse AI for a space
@@ -131,9 +131,9 @@ This document covers only:
 
 ---
 
-## 6. Detailed UX & Functional Requirements
+## Detailed UX & Functional Requirements
 
-### 6.0 Step 0 – Greeting Message
+### Step 1 – Greeting Message
 
 **Entry Condition:** User has just tapped into the Ohouse AI space experience
 
@@ -155,7 +155,7 @@ This document covers only:
 
 ---
 
-### 6.1 Step 1 – Space Photo Upload
+### Step 2 – Space Photo Upload
 
 **Entry Condition:** User has opted into the Ohouse AI space experience
 
@@ -171,7 +171,7 @@ This document covers only:
 
 ---
 
-### 6.2 Step 2 – Room Analysis & Question Capture
+### Step 3 – Room Analysis & Question Capture
 
 **State:** AI is analyzing the uploaded room photo (target: 15–20 seconds)
 
@@ -183,7 +183,7 @@ This document covers only:
   - Answerable in a few seconds
   - Clearly skippable if the user doesn't want to answer
 
-#### 6.2.1 Loading UI
+#### 3.1 Loading UI
 
 **Components:**
 - Visual loader (e.g., animated icon or subtle progress indicator)
@@ -200,7 +200,7 @@ This document covers only:
 
 ---
 
-#### 6.2.2 Question 1 – Space Role
+#### 3.2 Question 1 – Space Role
 
 **Goal:** Understand how the user wants to use this space in their daily life
 
@@ -245,7 +245,7 @@ This document covers only:
 
 ---
 
-#### 6.2.3 Question 2 – Main Pain Point
+#### 3.3 Question 2 – Main Pain Point
 
 **Goal:** Capture what feels most lacking or frustrating in the current space
 
@@ -288,7 +288,7 @@ This document covers only:
 
 ---
 
-#### 6.2.4 Interaction Rules (Both Questions)
+#### 3.4 Interaction Rules (Both Questions)
 
 **Visibility & Timing:**
 - Both questions are shown while analysis is running
@@ -312,9 +312,9 @@ This document covers only:
 
 ---
 
-## 7. Data & Analytics (Part 1)
+## Data & Analytics (Part 1)
 
-### 7.1 Events to Track
+### Events to Track
 
 **Key questions:**
 - Can users answer these questions easily during loading?
@@ -329,7 +329,7 @@ This document covers only:
 - `ai_space_analysis_complete` – analysis finished
 - `ai_space_onboarding_part1_complete` – user transitions to Part 2
 
-### 7.2 Metrics to Observe (for Learning)
+### Metrics to Observe (for Learning)
 
 - % of users who answer Q1
 - % of users who answer Q2
@@ -343,9 +343,9 @@ This document covers only:
 
 ---
 
-## 8. Edge Cases & Constraints (Part 1)
+## Edge Cases & Constraints (Part 1)
 
-### 8.1 Edge Cases
+### Edge Cases
 
 | Edge Case | Handling |
 |-----------|----------|
@@ -356,7 +356,7 @@ This document covers only:
 
 ---
 
-## 9. Future Considerations (Beyond Part 1)
+## Future Considerations (Beyond Part 1)
 
 - **Multi-space support:** Extend onboarding flow to handle Bedroom, Home Office, Kitchen, etc.
 - **Space-type contextualization:** Customize Q1 and Q2 options based on space type
