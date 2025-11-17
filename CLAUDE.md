@@ -481,4 +481,5 @@ Reference `Design_Leadership_Hiring_Framework.md` for structure. Follow the temp
 
 **Key Mindset:**
 "This is not a design portfolio. This is a leadership portfolio that uses design as evidence."
-
+- 내가 포트폴리오 작업하다가 항상 디테일한 부분으로 빠지는 경향이 있는데 - 진행할때 가장 핵심인 부분을 작업 중인지 (큰 틀) 디테일을 작업할 때인지 - 리마인드를 할 수 있을까
+- 나한테 제일 중요한 프로젝트는 ohouse ai랑 3C Flyhweel 이야 - 3C flywheel은 아직 내용을 추가 안했고, Brand 2.0, visual search 등은 내가 한일의 breadth를 보여주기 위한 장치에 불가함.

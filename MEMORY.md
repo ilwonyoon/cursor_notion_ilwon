@@ -12,8 +12,24 @@
 **Brand_2.0** (v4)
 Persona clarity is the linchpin for cross-functional alignment and decision-making. When you identify and unify around "who we're solving for," brand strategy, team priorities, and execution naturally align. Brands want differentiated treatment; designing for specific users unlocks that. This taught me that strategic alignment before execution beats brilliant execution without context.
 
-**Ohouse_AI** (v6)
+**Source Files:**
+- `/Portfolio/Brand_2.0/raw_convo.md` - Core discovery conversation
+- `/Portfolio/Brand_2.0/brand_2.0_what_to_visualize.md` - Visual strategy
+
+**Ohouse_AI** (v6 → v7: Near-term Implementation)
 Recognized deeper user problem beyond transaction. Strategic pivot: buying products ≠ solving cohesive room design. Got C-level buy-in for data infrastructure investment. Transitioned from managing full design team to IC-level AI product design leadership. One designer empowered with right AI infrastructure achieves outcomes that previously required full team. System architecture enables force multiplication.
+
+**Near-term Implementation Strategy (Nov 2025):**
+Core thesis: **Room photo + AI = Personalized commerce (not another e-commerce onboarding)**. Key shift from "Consumption → Conversion" to "Creation → Conversion." User journey: Upload photo → Structured intent capture (room/goal/categories) → Shopping Home with pre-rendered products → 2D/3D loop validation. Critical insight: Users need confidence before purchase (5k–100k investments). Business signal: ~50% conversion on rendered product suggestions (40 SKU subset, early evidence). Three near-term journeys: (1) Onboarding & personalized home, (2) Inspiration → my room translation, (3) Community templates from completed designs. Agent architecture: Simple UI (ChatGPT-like), complex orchestration backend. Differentiator: Domain understanding + Ohouse user insights + intent routing to specialized agents (visualization, style, structure). Trust building: Freemium model with community voting (users earn credits by providing preference data, trains models + builds social validation). Note: This is design phase validation only. Execution phase (contractor management) currently being shaped internally.
+
+**Source Files:**
+- `/Daily_note/11182025.md` - Near-term Implementation Strategy (discovery conversation, 10 sections)
+- `/Portfolio/Ohouse_ai_long_term/20_part1_narrative_v1.md` - Part 1 narrative structure
+- `/Portfolio/Ohouse_ai_long_term/21_part1_hero_5slides_framework.md` - Hero 5 slides framework
+- `/Portfolio/Ohouse_ai_long_term/22_part1_key_frameworks.md` - Key thinking frameworks
+- `/Portfolio/Ohouse_ai_long_term/PRDs/Onboarding.md` - Onboarding PRD (newly added)
+- `/Portfolio/Ohouse_ai_long_term/keyFlows_part1_v1.md` - Key user flows with user stories
+- `/Portfolio/Ohouse_ai_long_term/ohouse_ai_memory.md` - Project-specific memory
 
 **Competitive Differentiation vs. Generic AI Design Tools:**
 1. **Lifestyle Understanding through Photo Analysis** - Reverse-engineer user's actual living patterns from space choices (furniture longevity, open space preference, storage constraints) rather than asking abstract "what's your style?" questions
@@ -23,19 +39,44 @@ Recognized deeper user problem beyond transaction. Strategic pivot: buying produ
 **Visual_Search** (v3)
 [Core insight pending - need to review latest version for key takeaway]
 
+**Source Files:**
+- `/Portfolio/Visual_Search/visual_search_v3.md` - Latest version (v3)
+- `/Portfolio/Visual_Search/visual_search_v2.md` - Previous version
+- `/Portfolio/Visual_Search/convo_raw.md` - Discovery conversation
+- `/Portfolio/Visual_Search/visual_search_v1_feedback.md` - Feedback summary
+
 ### Work: Thought Leadership & Development
 
 **AI_Native_Team_Building** (v3)
 Leaders must immerse themselves in struggle first. When you get stuck, waste time, want to give up—that's when you understand barriers your team faces. Only through shared struggle can you design removal of barriers, not just directive leadership. Organizations become truly AI-native through synchronous system-level transformation, not piecemeal tool adoption. Protected time without performance pressure is structural necessity, not nice-to-have. This applies to any team adopting fundamental change.
 
+**Source Files:**
+- `/Work_Build_ai_native/AI_native_team_building/AI_native_team_building_v3.md` - Latest version (v3)
+- `/Work_Build_ai_native/AI_native_team_building/AI_native_team_building_v2.md` - Previous iteration
+- `/Work_Build_ai_native/AI_native_team_building/convo_raw.md` - Discovery conversation
+- `/Work_Build_ai_native/AI_native_team_building/linkedin_posting/` - LinkedIn 4-part series (Part 1-2 published)
+
 **PD_in_AI** (v1)
 Design leadership's fundamental premise shifted. Medium changed from deterministic to probabilistic. Designers can no longer optimize for predictable user states; must design for uncertainty, emergent behavior, AI reasoning gaps. Design systems must be adaptive (not prescriptive). Leaders stuck in old mental models become blockers. Design system management experience: partial upgrades scatter maintenance burden; system-level redesign necessary when medium fundamentally shifts.
+
+**Source Files:**
+- `/Work_Build_ai_native/PD_in_AI/Design_Leadership_Medium_Shift.md` - Core framework
 
 **UX_Writing_System** (v1)
 One UX writer becomes 100+ users through system design, not burnout. Progression: Assist (Claude Skills) → Automate (UX Writing Archive) → AI-Native (integrated system learning from performance). Strategic not tactical: chose to build internal system over vendor because maintainability/adaptability matter as tone evolves. Phased adoption (strategic selection → proof building → organic scaling) works. Blueprint applies to any discipline: clarify domain → build infrastructure → distribute capability.
 
+**Source Files:**
+- `/Work_Build_ai_native/UX_writing/UX_writing_v1.md` - Core writeup
+- `/Work_Build_ai_native/UX_writing/convo_raw.md` - Discovery conversation
+- `.claude/skills/UX-writer/SKILL.md` - Claude Skill implementation
+
 ### Personal Leadership Philosophy
-**Leadership_First_Month_Framework.md**: Start with customer/product reality, not vision. Do the work yourself to understand constraints. Only after understanding actual conditions design for what's real, then ask "how could this be AI-native?" Leaders gain credibility through hands-on participation, not directive authority. Self-doubt during learning becomes shared empathy with team, not weakness.
+
+**Leadership_First_Month_Framework**
+Start with customer/product reality, not vision. Do the work yourself to understand constraints. Only after understanding actual conditions design for what's real, then ask "how could this be AI-native?" Leaders gain credibility through hands-on participation, not directive authority. Self-doubt during learning becomes shared empathy with team, not weakness.
+
+**Source Files:**
+- `/Work_Build_ai_native/AI_native_team_building/Leadership_First_Month_Framework.md` - Core framework
 
 ---
 
