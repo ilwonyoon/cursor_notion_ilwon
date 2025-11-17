@@ -264,30 +264,6 @@ This document covers only:
 
 ---
 
-#### 3.4 Interaction Rules (Both Questions)
-
-**Visibility & Timing:**
-- Both questions are shown while analysis is running
-- If analysis finishes before the user answers:
-  - Keep the questions visible until they respond or skip
-  - Show a subtle message: *"Your space is ready. You can answer these to improve recommendations or skip for now."*
-
-**Skipping Behavior:**
-- Allow the user to skip each question (e.g., "Skip for now")
-- If both are skipped:
-  - SpaceRole and SpacePain remain empty / null
-  - Downstream logic will fall back to generic defaults
-
-**Partial Answers:**
-- **If only Q1 is answered:** Use SpaceRole for downstream logic, leave SpacePain null
-- **If only Q2 is answered:** Use SpacePain, and treat Role as unknown
-
-**Completion:**
-- When analysis is done and the questions are answered or skipped:
-  - Proceed to Part 2 entry point
-
----
-
 ### Step 4 – Analysis Complete & Recommendation Message
 
 **Entry Condition:** Part 1 analysis is complete, questions answered or skipped
