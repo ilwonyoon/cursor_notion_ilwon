@@ -266,26 +266,26 @@ This document covers only:
 
 ### Step 4 – Analysis Complete & Recommendation Message
 
-**Entry Condition:** Part 1 analysis is complete, questions answered or skipped
-
 **Goal:** Present AI analysis insights + room improvement suggestions based on photo + user intent
 
-**Content:**
-- Analysis complete confirmation
-- Room photo with key insights (what AI detected)
-- Personalized message based on SpaceRole + SpacePain
-- Overview of improvement suggestions
+**Message:**
 
-**Example Message:**
+Here's what we found in your living room.
 
-*"Here's what we found in your living room:*
+Your space has great natural light and a solid foundation—sofa and TV in the right spots. But the middle of the room feels empty, and the walls need some personality.
 
-*Your space is about 250 sq ft with good natural light, but feels empty in the middle zone.*
+Based on wanting cozy family time, here's what could transform this:
+- Soft rugs and throws to anchor the middle zone and make movie nights cozier
+- Warm lighting around your sofa to soften the room
+- Wall art or frames to give the blank walls some character
 
-*Based on you wanting to unwind with family and the room feeling too bare, we suggest:*
-- *Adding soft textures (rugs, throws) to make it cozier*
-- *Layering lighting to warm up dark corners*
-- *Strategic furniture pieces to fill the empty middle zone"*
+Let's build out these categories next.
+
+**Copy Rationale:**
+- **"Here's what we found"** – Collaborative tone, matches greeting message ("Hey! Let's find pieces")
+- **"Solid foundation" + honest observations** – Empowering (confidence) + Honest (real observations)
+- **Action-linked suggestions** – Each suggestion tied directly to user's stated intent (cozy family time)
+- **"Let's build out"** – Maintains "we" collaborative energy into next step
 
 ---
 
