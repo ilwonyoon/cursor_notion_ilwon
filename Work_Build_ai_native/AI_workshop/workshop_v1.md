@@ -91,18 +91,135 @@ For the next 6 hours, you are a student. No titles, no hierarchy, just explorati
 
 ### 3.1 필수 셋업 (순서대로)
 
-**1단계: Cursor (코드 에디터)**
-- 클라우드 기반, 프로 버전 불필요
-- 기본 설정으로 충분
-- Claude AI가 내장되어 있음
+---
 
-**2단계: GitHub 계정**
-- 코드 저장소 용도
-- 나중에 배포(Vercel)할 때 필요
+## 1단계: Cursor 설치 & 필수 세팅
 
-**3단계: Claude Code CLI**
-- 터미널에서 Claude 사용 가능
-- 필요한 것들을 설치하면서 배우기
+**왜 필요한가?**
+Cursor는 코드를 짜는 공간이에요. 메모장처럼 텍스트를 쓰지만, Claude AI가 안에 있어서 "이거 수정해줄래?"하면 바로 도와줍니다. 코딩하기 편하게 만들어진 도구예요.
+
+**Cursor 다운로드:**
+https://www.cursor.sh → Cursor.dmg 다운로드 → Applications 폴더로 드래그
+
+**실행:**
+Applications → Cursor 더블클릭
+
+---
+
+**필수 세팅 (초보 바이브 코더용):**
+
+| 설정 | 방법 | 이유 |
+|------|------|------|
+| **Claude API 연동** | Cursor 열기 → Settings → Claude API 활성화 | Claude와 대화하면서 코드 작성 |
+| **자동 저장** | Settings → Files: Auto Save | 저장 잊어버리는 것 방지 |
+| **키보드 단축키** | Cmd+K = Claude와 대화 / Cmd+Shift+L = 터미널 열기 | 빠른 작업 흐름 |
+| **코드 포맷팅** | Settings → Format On Save 활성화 | 코드가 자동으로 정렬됨 |
+| **터미널 표시** | Cmd+Shift+L로 하단 터미널 열기 | 명령어 실행할 때 사용 |
+
+**완료 확인:**
+```
+Cursor 실행 → 터미널 열기 (Cmd+Shift+L)
+→ node --version 입력
+→ 버전 번호 나타나면 완료 ✓
+```
+
+---
+
+## 2단계: Claude Mac App 설치
+
+**왜 필요한가?**
+Claude는 AI 비서 같은 거예요. Cursor에서도 쓸 수 있지만, Mac 앱을 따로 깔면 언제든 물어볼 수 있어서 편합니다. "이거 어떻게 해?" 하면 바로 답해줘요.
+
+**다운로드:**
+App Store 검색 → "Claude" → 공식 Anthropic 앱 설치
+
+**로그인:**
+설치 후 실행 → Anthropic 계정으로 로그인
+
+**확인:**
+앱이 실행되고 대화할 수 있으면 완료 ✓
+
+---
+
+## 3단계: GitHub 계정 생성
+
+**왜 필요한가?**
+GitHub는 구글 드라이브처럼 코드를 클라우드에 저장하는 곳이에요. 내가 만든 코드를 안전하게 보관하고, 나중에 웹에 올릴 때 이걸 거쳐서 올립니다.
+
+**계정 만들기:**
+https://github.com/signup → 이메일, 패스워드, Username 입력 → 이메일 인증
+
+**꼭 기억할 것:**
+- Username은 나중에 변경 어려우니 신중히 정하기
+- GitHub 이메일 메모해두기 (나중에 필요)
+
+**확인:**
+로그인 후 대시보드 보이면 완료 ✓
+
+---
+
+## 4단계: Vercel 계정 생성
+
+**왜 필요한가?**
+내 코드를 실제로 웹에 올려야 다른 사람들이 볼 수 있잖아요. Vercel은 GitHub의 코드를 받아서 자동으로 웹에 올려주는 호스팅 서비스예요.
+
+**계정 만들기:**
+https://vercel.com → "Sign Up" → GitHub로 로그인 (가장 편함)
+
+**권한 승인:**
+Vercel이 GitHub 접근할 수 있도록 "Authorize" 클릭
+
+**확인:**
+Vercel 대시보드 보이면 완료 ✓
+
+---
+
+## 5단계: Claude Code CLI 설치
+
+**왜 필요한가?**
+터미널(검은색 창)에서도 Claude를 부를 수 있으면, 복잡한 작업을 자동화할 수 있어요. "폴더 생성해주고 파일도 만들어줄래?" 이렇게 요청할 수 있어요.
+
+**터미널에서:**
+```bash
+curl -fsSL https://claude.sh/install.sh | bash
+```
+
+**확인:**
+터미널 재시작 후:
+```bash
+claude --version
+```
+버전 번호 나타나면 완료 ✓
+
+---
+
+## 6단계: Git 로컬 설정
+
+**왜 필요한가?**
+내가 코드를 바꿀 때마다 "누가, 언제, 뭘 바꿨는가?"를 기록해둬야 해요. 나중에 실수하면 이전 버전으로 돌아갈 수 있거든요. 그래서 내 정보를 미리 등록하는 거예요.
+
+**터미널에서:**
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your.email@github.com"
+```
+
+(GitHub에서 사용한 이메일과 동일하게)
+
+---
+
+## ✅ 최종 확인 체크리스트
+
+- ✅ Cursor 설치 & 세팅 완료
+- ✅ Claude Mac App 설치 & 로그인 완료
+- ✅ GitHub 계정 생성 (Username 메모)
+- ✅ Vercel 계정 생성 & GitHub 연동
+- ✅ Claude Code CLI 설치 (`claude --version` 작동)
+- ✅ Git 로컬 설정 완료
+
+**모두 완료하면 워크숍 준비 끝!** 🚀
+
+---
 
 ### 3.2 버전 관리 개념 (Git)
 
