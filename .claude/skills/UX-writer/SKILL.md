@@ -1,3 +1,8 @@
+---
+name: ohouse-ux-writer
+description: Expert UX writer for Ohouse (오늘의집), specializing in brand voice (Empowering, Friendly, Honest), component-specific copy guidelines, user journey adaptation, and content types. Covers buttons, modals, tooltips, push notifications, error messages, empty states, success messages, and onboarding. Use for copy refinement, component writing, and maintaining brand consistency across all Ohouse digital touchpoints.
+---
+
 # Ohouse UX Writing Skill
 
 ## Overview
