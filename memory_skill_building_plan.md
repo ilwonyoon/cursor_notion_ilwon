@@ -49,6 +49,37 @@ Session end:
 - User approves → auto-update JSON + git commit
 ```
 
+#### Layer 4: Memory Lifecycle & Archiving
+```
+Human memory model: Active → Warm → Archived → Deep Archive
+
+Active (0-30 days unused):
+- Full context loaded
+- All versions + insights available
+- Prioritized in topic detection
+
+Warm (31-90 days unused):
+- Recent versions loaded on demand
+- Key insights highlighted
+- Lower priority in suggestions
+
+Archived (91-180 days unused):
+- Compressed: 2 recent versions only
+- Core concepts preserved
+- Reference-only loading
+
+Deep Archive (180+ days unused):
+- Moved to archive/ folder
+- Access via semantic search only
+- Quarterly review for relevance
+
+Auto-cleanup:
+- Quarterly memory review
+- Auto-compress old versions
+- Suggest archiving inactive topics
+- User approval before archiving
+```
+
 ---
 
 ## File Structure
@@ -56,7 +87,7 @@ Session end:
 ```
 .cursor/skills/project-memory/
 ├── SKILL.md                           # Claude Skill definition
-├── topics/                            # Dynamic topic contexts
+├── topics/                            # Active & warm topics
 │   ├── brand_2.0.json
 │   ├── ohouse_ai.json
 │   ├── visual_search.json
@@ -64,9 +95,12 @@ Session end:
 │   ├── ux_writing.json
 │   ├── ai_native_team_building.json
 │   └── pd_in_ai.json
-├── topic_index.json                   # All topics registry
+├── archives/                          # Deep archived topics (180+ days)
+│   └── [archived topic files]
+├── topic_index.json                   # Registry (status, access_count, last_accessed)
 ├── connections.json                   # Topic relationships
 ├── memory_update_log.json              # History of updates
+├── memory_lifecycle.json               # Archiving schedule & rules
 └── README.md                          # Usage guide
 ```
 
@@ -80,8 +114,16 @@ Each topic file contains:
 {
   "topic": "Topic Name",
   "category": "Portfolio|Work",
-  "status": "active|archived",
+  "status": "active|warm|archived|deep_archive",
   "last_updated": "2025-11-18T10:30:00",
+  "last_accessed": "2025-11-18T10:30:00",
+
+  "lifecycle": {
+    "access_count": 45,
+    "access_frequency": "high|medium|low",
+    "days_since_access": 0,
+    "auto_archive_date": "2025-02-16"
+  },
 
   "versions": [
     {
@@ -104,7 +146,9 @@ Each topic file contains:
       "source_file": "file path",
       "related_concepts": ["concept"]
     }
-  ]
+  ],
+
+  "archived_versions": null
 }
 ```
 
@@ -148,21 +192,31 @@ Each topic file contains:
    - User approval flow
    - Auto JSON update + git commit
 
+8. **Memory lifecycle & archiving**:
+   - Track access_count and last_accessed for each topic
+   - Implement auto-categorization: active → warm → archived → deep_archive
+   - Compress old versions when archiving (keep only 2 recent + key concepts)
+   - Move deep archived topics to archives/ folder
+   - Create memory_lifecycle.json to track archiving schedule
+
 ### Phase 3: Testing & Refinement (if time)
 
-8. **Test scenarios**:
+9. **Test scenarios**:
    ```
    ✓ Single topic load: "Ohouse AI v7 near-term?"
    ✓ Multi-topic: "How do Brand 2.0 and Ohouse AI connect?"
    ✓ Semantic search: "design phase vs execution phase"
    ✓ New insight: Auto-detect + propose update
    ✓ Version tracking: "Show AI_native_team_building evolution"
+   ✓ Memory lifecycle: Topics auto-transition based on access
+   ✓ Archiving: Old topics compress versions correctly
    ```
 
-9. **Edge cases**:
+10. **Edge cases**:
    - New topics (auto-detection + ask before adding)
    - File path changes (auto-update references)
    - Deleted topics (archive instead of delete)
+   - Archive recovery (reload archived topic when referenced)
 
 ---
 
@@ -226,6 +280,33 @@ When new files created:
 - User configures trigger keywords, concepts, etc.
 ```
 
+### 6. Memory Lifecycle & Auto-Archiving
+```
+Quarterly memory review:
+- Analyze access_count and days_since_access for each topic
+- Auto-categorize:
+  * active: 0-30 days, high access → load full context
+  * warm: 31-90 days, medium access → load key insights only
+  * archived: 91-180 days, low access → compressed (2 versions only)
+  * deep_archive: 180+ days → moved to archives/
+
+Auto-compression:
+- When archiving: keep only 2 most recent versions
+- Compress insights to "key insights summary"
+- Preserve core_concepts for semantic search
+
+Quarterly user prompt:
+"Memory review:
+- visual_search: 180+ days unused. Archive? [Yes] [No]
+- brand_2.0: 90+ days, moving to Warm. [OK]
+- ohouse_ai: Active (2 days unused). Load on demand. [OK]"
+
+Auto-recovery:
+- If archived topic referenced → auto-load from archives/
+- Update last_accessed timestamp
+- Consider moving back to active if used
+```
+
 ---
 
 ## Comparison: Before vs After
@@ -239,6 +320,10 @@ When new files created:
 | **Cross-topic Links** | Manual maintenance | Auto-discovery + proposal |
 | **New Topics** | Manual documentation | Auto-detect + ask |
 | **Session Memory** | No session tracking | Conversation → insights logged |
+| **Memory Cleanup** | Never cleaned | Auto-archive inactive (quarterly) |
+| **Old Versions** | All preserved forever | Compressed when archived |
+| **Access Tracking** | No tracking | Access count + frequency tracked |
+| **Memory Decay** | No decay model | Active → Warm → Archived → Deep |
 
 ---
 
@@ -277,6 +362,30 @@ Related: business metrics & UX validation"
 Me: [Approve/Edit]
 → Auto-update: ohouse_ai.json
 → Auto-commit: git commit -m "Update ohouse_ai: design phase metrics insight"
+
+[Quarterly Review - Every 3 Months]
+System analyzes all topics:
+- visual_search: Last accessed 2025-08-15 (96 days)
+  Status: Moving to Archived
+  Action: Compress to 2 versions, move core_concepts to summary
+
+- brand_2.0: Last accessed 2025-09-10 (69 days)
+  Status: Warm
+  Action: Load key_insights only by default
+
+- ohouse_ai: Last accessed 2025-11-18 (0 days)
+  Status: Active
+  Action: Keep full context, prioritize in suggestions
+
+System proposes:
+"Memory review (Quarterly):
+- Archive visual_search? (180+ days) [Yes] [No]
+- Acknowledge brand_2.0 → Warm [OK]
+- Keep ohouse_ai active [OK]"
+
+→ Auto-update topic statuses
+→ Move archived topics to archives/ folder
+→ Auto-commit: git commit -m "Quarterly memory cleanup: archive 2 topics, compress versions"
 ```
 
 ---
@@ -312,6 +421,12 @@ When complete:
 6. ✅ Handles new topics gracefully
 7. ✅ Tracks topic connections automatically
 8. ✅ Version history preserved & accessible
+9. ✅ Tracks access count & frequency for each topic
+10. ✅ Auto-categorizes topics into 4 lifecycle states
+11. ✅ Auto-compresses old versions when archiving
+12. ✅ Moves deep-archived topics to archives/ folder
+13. ✅ Quarterly memory review prompts user for archiving decisions
+14. ✅ Can recover archived topics via semantic search
 
 ---
 
@@ -342,6 +457,14 @@ When complete:
 - ✅ LLM can analyze semantics directly
 - ✅ Simpler, fewer dependencies
 - ✅ Faster for small-to-medium document sets
+
+**Why memory cleanup & archiving?**
+- ✅ Human memory model: old memories less accessible, not forgotten
+- ✅ Prevents context bloat (100+ topics eventually)
+- ✅ Prioritizes active work (recent projects load first)
+- ✅ Preserves complete history (archived, not deleted)
+- ✅ Improves semantic search relevance (active topics ranked higher)
+- ✅ Mirrors how human brain works: remember important, archive old
 
 ---
 
