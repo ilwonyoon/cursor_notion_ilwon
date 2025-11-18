@@ -91,6 +91,53 @@ Step 4: "I'm staying mid-range because you didn't mention budget concerns.
 
 ### **LLM Instructions for Each Reasoning Step**
 
+#### **Step 0: Parse & Confirm User Intent**
+
+**LLM Task:**
+- Input: Room photo(s) + user's intent description (e.g., "어떻게 해줘", "Make it cozy", "I want something bold", typos or vague descriptions)
+- Analysis to consider:
+  - Is the user's intent CLEAR? (e.g., "Make my living room warmer" = clear)
+  - Is the user's intent VAGUE? (e.g., "Make it nice" = unclear)
+  - Are there typos or unclear language that need clarification?
+  - What task type is this? (analyzing room, concept direction, visual style, space planning, 3D layout, product selection)
+  - What room type is this? (living room, bedroom, kitchen, bathroom, exterior, etc.)
+- Output format (IF intent is clear):
+  - Confirm understanding: "You want me to [specific goal] for your [room type]."
+  - Acknowledge constraint/style: "I'm hearing [style/mood/constraint]."
+  - Ready to proceed: "Great. Let me analyze your space and build some options."
+  - Keep under 3 sentences
+- Output format (IF intent is unclear/vague/needs clarification):
+  - Ask clarifying question: "I want to make sure I understand—when you say [their words], do you mean [possible interpretation A] or [possible interpretation B]?"
+  - Offer examples: "For example, are you looking for something cozy and warm, modern and minimal, or bold and colorful?"
+  - Invite refinement: "Help me understand what matters most to you, and I'll create something perfect for your space."
+  - Keep under 4 sentences
+- Tone check:
+  - ✅ Clear, friendly clarification (no judgment)
+  - ✅ Specific to their actual words (shows listening)
+  - ✅ Offers examples if confused, but doesn't patronize
+  - ❌ NOT condescending ("You didn't explain clearly...")
+  - ❌ NOT making assumptions without confirming
+  - ❌ NOT asking too many questions at once
+
+**Output Example (Clear Intent):**
+```
+"You want me to make your living room warmer and cozier for family movie nights.
+I'm sensing you like a cozy, intimate mood without it feeling cramped.
+Let me analyze your space and create some designs that bring that warmth."
+```
+
+**Output Example (Unclear Intent):**
+```
+"I want to make sure I understand—when you say 'make it nice,' are you picturing something cozy and comfortable, sleek and modern, or colorful and playful?
+That'll help me create exactly what you're envisioning."
+```
+
+**User Action After:**
+- (If clear) → System proceeds to Step 1
+- (If unclear) → User provides clarification, returns to Step 0, then proceeds to Step 1
+
+---
+
 #### **Step 1: Read Your Room**
 
 **LLM Task:**

@@ -219,8 +219,29 @@ This DB covers **Onboarding Part 1** (Steps 1-5).
 
 # Part 2: Standalone App Reference – AI Reasoning Flow
 
-**Prototype Scope:** Reasoning steps 1-6 for the AI interior designer assistant
+**Prototype Scope:** Reasoning steps 0-6 for the AI interior designer assistant
 **Tone Reference:** Transparent, Conversational, Evidence-Based (See `AI_reasoning_instruction.md`)
+
+---
+
+## Step 0: Parse & Confirm User Intent
+
+**Page ID:** `reasoning_step_0_confirm_intent`
+**Description:** AI clarifies or confirms the user's intent before proceeding with analysis
+**Tone:** Friendly + Clarifying (no judgment)
+
+### When Intent is Clear
+
+| Copy Key | Component Type | Text Value | Tone Notes |
+|----------|----------------|------------|-----------|
+| `step0_clear_intent_confirmation` | body | You want me to make your living room warmer and cozier for family movie nights. I'm sensing you like a cozy, intimate mood without it feeling cramped. Great—let me analyze your space and create some designs that bring that warmth. | Confirms understanding in user's words. Reflects back specific goal + mood. Reassures with "Great" before proceeding. |
+
+### When Intent is Unclear/Vague
+
+| Copy Key | Component Type | Text Value | Tone Notes |
+|----------|----------------|------------|-----------|
+| `step0_unclear_intent_question` | body | I want to make sure I understand—when you say "make it nice," are you picturing something cozy and comfortable, sleek and modern, or colorful and playful? That'll help me create exactly what you're envisioning. | Acknowledges their words ("make it nice"). Offers concrete examples without patting down. Invites refinement with collaborative language ("That'll help me create..."). |
+| `step0_vague_clarification_example` | body | Help me understand what matters most—are you looking to add more comfort, more style, or better organization? I want to make sure I'm designing something that feels right for you. | Opens options without being overwhelming. Emphasizes personalization ("feels right for you"). |
 
 ---
 

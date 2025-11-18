@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-Generate 6 static UI mockups showing the AI interior designer's reasoning progress through sequential steps in a chat-based interface. Each mockup represents a key moment in the reasoning flow as the AI analyzes a user's living room and prepares design proposals.
+Generate 9 static UI mockups showing the AI interior designer's reasoning progress through sequential steps in a chat-based interface. Each mockup represents a key moment in the reasoning flow as the AI parses user intent, analyzes a user's living room, and prepares design proposals.
 
-**Context:** Ohouse AI standalone vision - Flow 1 (Agentic Reasoning & Design Generation). User has uploaded a room photo and provided intent (family hangout, cozy).
+**Context:** Ohouse AI standalone vision - Flow 1 (Agentic Reasoning & Design Generation). User has uploaded a room photo and provided intent (family hangout, cozy). Step 0 confirms this intent before proceeding with analysis.
 
 ---
 
@@ -58,16 +58,85 @@ Generate 6 static UI mockups showing the AI interior designer's reasoning progre
   - Content: "Analyzing your room..." (14px)
   - Three-dot animated loader visible (represented as three static dots in stitch)
 
-**Visual State:** Snapshot of "waiting for Step 1" - user has input, system is processing
+**Visual State:** Snapshot of "waiting for Step 0" - user has input, system is processing
 
 ---
 
-## Mockup 2: Step 1 Complete - Read Your Room
+## Mockup 2: Step 0 Complete - Intent Confirmation (Clear Intent)
 
 ### Visual Description
 
 **Header Section:**
-- Same as Mockup 1, but status changed to "Step 1/6 Complete"
+- Title: "AI Room Designer" (left-aligned, 18px bold)
+- Status: "Understanding your needs..." or no status
+- Loading indicator gone
+
+**Chat Area (Scrolled naturally, showing user input + Step 0):**
+
+**User message bubble** (same as before, slightly faded/less prominent):
+- Room photo thumbnail + user text
+
+**AI Step 0 bubble** (left-aligned, fresh white #F5F5F5):
+- Step label: "CONFIRMING YOUR INTENT" (11px all-caps gray)
+- Divider line below label (1px #F0F0F0)
+- Content text:
+  ```
+  You want me to make your living room warmer and cozier for family
+  movie nights. I'm sensing you like a cozy, intimate mood without it
+  feeling cramped.
+
+  Let me analyze your space and create some designs that bring that warmth.
+  ```
+  (14px, #333333, line-height 1.6)
+- Small icon (optional): Question mark icon (16x16px) next to step label, gray
+
+**Visual State:** Intent confirmed, system ready to proceed to analysis steps. No user action required.
+
+---
+
+## Mockup 3: Step 0 Alternative - Intent Clarification (Unclear Intent)
+
+### Visual Description
+
+**Header Section:**
+- Title: "AI Room Designer"
+- Status: "Clarifying your vision..."
+
+**Chat Area (Scrolled naturally, showing user input + Step 0 clarification):**
+
+**User message bubble** (faded, less prominent):
+- Room photo thumbnail + user text (e.g., "Make it nice")
+
+**AI Step 0 clarification bubble** (left-aligned, fresh white #F5F5F5):
+- Step label: "CONFIRMING YOUR INTENT" (11px all-caps gray)
+- Divider line below label (1px #F0F0F0)
+- Content text:
+  ```
+  I want to make sure I understand—when you say "make it nice," are you
+  picturing something cozy and comfortable, sleek and modern, or colorful
+  and playful?
+
+  That'll help me create exactly what you're envisioning.
+  ```
+  (14px, #333333, line-height 1.6)
+- Small icon (optional): Question mark icon (16x16px) next to step label, gray
+
+**Interactive Element:**
+- Show option buttons below the bubble (represented in static mock as text):
+  - "Cozy & Comfortable"
+  - "Sleek & Modern"
+  - "Colorful & Playful"
+
+**Visual State:** Awaiting user clarification. Once user selects, system re-confirms intent and proceeds to Step 1.
+
+---
+
+## Mockup 4: Step 1 Complete - Read Your Room
+
+### Visual Description
+
+**Header Section:**
+- Status changed to "Step 1/7 Complete"
 - Loading indicator gone, small checkmark appears next to "AI Room Designer"
 
 **Chat Area (Scrolled naturally, showing user input + Step 1):**
@@ -92,16 +161,16 @@ Generate 6 static UI mockups showing the AI interior designer's reasoning progre
 
 ---
 
-## Mockup 3: Step 2 Complete - Frame Goals & Constraints
+## Mockup 5: Step 2 Complete - Frame Goals & Constraints
 
 ### Visual Description
 
-**Header:** Status "Step 2/6 Complete"
+**Header:** Status "Step 2/7 Complete"
 
-**Chat Area (Scrolled down, showing Steps 1-2):**
+**Chat Area (Scrolled down, showing Steps 0-2):**
 
-**Step 1 bubble** (visible above, slightly grayed out #FAFAFA background):
-- Same as Mockup 2 but with reduced opacity (70%) to show it's "previous" content
+**Step 0 & Step 1 bubbles** (visible above, slightly grayed out #FAFAFA background):
+- Same as previous mockups but with reduced opacity (70%) to show they're "previous" content
 
 **AI Step 2 bubble** (left-aligned, #F5F5F5):
 - Step label: "STEP 2: FRAMING YOUR GOALS" (11px all-caps gray)
@@ -119,15 +188,15 @@ Generate 6 static UI mockups showing the AI interior designer's reasoning progre
 
 ---
 
-## Mockup 4: Step 3 Complete - Explore Directions
+## Mockup 6: Step 3 Complete - Explore Directions
 
 ### Visual Description
 
-**Header:** Status "Step 3/6 Complete"
+**Header:** Status "Step 3/7 Complete"
 
-**Chat Area (Scrolled down, showing Steps 2-3):**
+**Chat Area (Scrolled down, showing Steps 1-3):**
 
-**Step 2 bubble** (visible above, faded #FAFAFA):
+**Step 1 & Step 2 bubbles** (visible above, faded #FAFAFA):
 - Previous step, grayed out
 
 **AI Step 3 bubble** (left-aligned, #F5F5F5):
@@ -154,15 +223,15 @@ Generate 6 static UI mockups showing the AI interior designer's reasoning progre
 
 ---
 
-## Mockup 5: Step 4 Complete - Source Products
+## Mockup 7: Step 4 Complete - Source Products
 
 ### Visual Description
 
-**Header:** Status "Step 4/6 Complete"
+**Header:** Status "Step 4/7 Complete"
 
-**Chat Area (Scrolled down, showing Steps 3-4):**
+**Chat Area (Scrolled down, showing Steps 2-4):**
 
-**Step 3 bubble** (visible above, faded #FAFAFA):
+**Step 2 & Step 3 bubbles** (visible above, faded #FAFAFA):
 - Previous step, grayed out
 
 **AI Step 4 bubble** (left-aligned, #F5F5F5):
@@ -183,15 +252,15 @@ Generate 6 static UI mockups showing the AI interior designer's reasoning progre
 
 ---
 
-## Mockup 6: Step 5 Complete - Show Design Options
+## Mockup 8: Step 5 Complete - Show Design Options
 
 ### Visual Description
 
-**Header:** Status "Step 5/6 Complete"
+**Header:** Status "Step 5/7 Complete"
 
-**Chat Area (Scrolled down, showing Steps 4-5):**
+**Chat Area (Scrolled down, showing Steps 3-5):**
 
-**Step 4 bubble** (visible above, faded #FAFAFA):
+**Step 3 & Step 4 bubbles** (visible above, faded #FAFAFA):
 - Previous step, grayed out
 
 **AI Step 5 bubble** (left-aligned, #F5F5F5, larger):
@@ -219,15 +288,15 @@ Generate 6 static UI mockups showing the AI interior designer's reasoning progre
 
 ---
 
-## Mockup 7: Step 6 Complete - Final Plan Summary
+## Mockup 9: Step 6 Complete - Final Plan Summary
 
 ### Visual Description
 
-**Header:** Status "Step 6/6 Complete - Ready to Explore"
+**Header:** Status "Step 6/7 Complete - Ready to Explore"
 
-**Chat Area (Scrolled down, showing Steps 5-6):**
+**Chat Area (Scrolled down, showing Steps 4-6):**
 
-**Step 5 bubble** (visible above, faded #FAFAFA):
+**Step 4 & Step 5 bubbles** (visible above, faded #FAFAFA):
 - Previous step, grayed out
 
 **AI Step 6 bubble** (left-aligned, #F5F5F5, prominent):
@@ -255,7 +324,7 @@ Generate 6 static UI mockups showing the AI interior designer's reasoning progre
 
 ---
 
-## Mockup 8: Full Chat History View (All Steps Visible)
+## Mockup 10: Full Chat History View (All Steps 0-6 Visible)
 
 ### Visual Description
 
@@ -266,6 +335,7 @@ Generate 6 static UI mockups showing the AI interior designer's reasoning progre
 Show a "viewport" perspective showing:
 - **Top:** User message bubble (partially visible, scrolled up)
 - **Visible in viewport:**
+  - Step 0 bubble (faded, reference)
   - Step 1 bubble (faded, reference)
   - Step 2 bubble (faded, reference)
   - Step 3 bubble (faded, reference)
@@ -314,17 +384,18 @@ Show a "viewport" perspective showing:
 - Position: Left side of step label (8px before text)
 - Size: 16x16px
 - Color: #999999
-- Icons: Eye, Target, Compass, Shopping Bag, Palette, Checkmark
+- Icons: Question Mark (Step 0), Eye (Step 1), Target (Step 2), Compass (Step 3), Shopping Bag (Step 4), Palette (Step 5), Checkmark (Step 6)
 
 ---
 
 ## Interaction Notes (For Reference, Not in Static Mocks)
 
 **In actual implementation, these moments would be interactive:**
+- Step 0: If intent unclear → Tap option buttons for clarification → [Cozy & Comfortable] [Sleek & Modern] [Colorful & Playful]
 - Step 2: Confirmation question "Does that sound right?" → [Yes] [Not exactly → Adjust]
 - Step 4: Budget selection → [Budget-friendly] [Balanced] [Premium]
 - Step 5: Tap design areas to refine → User feedback loop
-- Step 6 / Mockup 8: CTA buttons are clickable
+- Step 6 / Mockup 10: CTA buttons are clickable
 
 **For static mocks, these are represented as text without interactive state.**
 
@@ -333,6 +404,7 @@ Show a "viewport" perspective showing:
 ## Copy Source
 
 All reasoning text comes directly from `AI_reasoning_instruction.md` Step sections:
+- Step 0: From "Output Example" section (Clear Intent and Unclear Intent variants)
 - Step 1: From "Output Example" section
 - Step 2: From "Output Example" section
 - Step 3: From "Output Example" section
@@ -354,13 +426,14 @@ All reasoning text comes directly from `AI_reasoning_instruction.md` Step sectio
 
 ## Google Stitch Generation Instructions
 
-1. **Generate 8 separate mockups** (Mockup 1-8 as described above)
+1. **Generate 10 separate mockups** (Mockup 1-10 as described above)
 2. **For each mockup:**
    - Use exact hex colors specified
    - Match typography (font sizes, weights, colors)
    - Maintain consistent spacing and component sizes
    - Show chat scrolling progression naturally (earlier steps fade out)
    - Include icons (or placeholder circles if icons unavailable)
+   - Step 0 mockups (2 & 3) show two variations: clear intent confirmation and unclear intent clarification
 
 3. **Quality checks:**
    - Each step's copy is readable and properly formatted
@@ -368,9 +441,10 @@ All reasoning text comes directly from `AI_reasoning_instruction.md` Step sectio
    - Spacing and alignment professional
    - Text wrapping appropriate for 310px effective width
    - Icons and visual hierarchy clear
+   - Step 0 variations clearly differentiate between confirmation and clarification flows
 
 4. **Deliverable:**
-   - 8 high-resolution PNG mockups (2x resolution for clarity)
+   - 10 high-resolution PNG mockups (2x resolution for clarity)
    - Mobile-ready presentation
    - Ready to use in portfolio or presentation deck
 
@@ -379,7 +453,7 @@ All reasoning text comes directly from `AI_reasoning_instruction.md` Step sectio
 ## Success Criteria
 
 When complete, the mockups should:
-1. ✅ Show 6 sequential reasoning steps in chat format
+1. ✅ Show 7 sequential reasoning steps (0-6) in chat format, with Step 0 showing intent parsing
 2. ✅ Demonstrate natural chat scrolling (previous steps fade/gray out)
 3. ✅ Use exact copy from AI_reasoning_instruction.md
 4. ✅ Follow design system specifications precisely

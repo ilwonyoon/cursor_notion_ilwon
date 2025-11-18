@@ -2,17 +2,45 @@
 
 ## Project Brief
 
-Create a chat-based UI prototype showing how AI interior designer's reasoning progresses through 6 sequential steps as it analyzes a user's living room photo.
+Create a chat-based UI prototype showing how AI interior designer's reasoning progresses through 7 sequential steps (0-6) as it parses user intent and then analyzes a user's living room photo.
 
-**Context:** This is Flow 1 (Agentic Reasoning & Design Generation) from Ohouse AI standalone vision. The user uploads a room photo + provides intent (Role + Pain), and the AI explains its thinking through 6 transparent reasoning steps before transitioning to Flow 2 (showing 4 design proposals).
+**Context:** This is Flow 1 (Agentic Reasoning & Design Generation) from Ohouse AI standalone vision. The user uploads a room photo + provides intent (Role + Pain), and the AI first confirms understanding of their intent (Step 0), then explains its thinking through 6 transparent reasoning steps (Steps 1-6) before transitioning to Flow 2 (showing 4 design proposals).
 
 **Design System Reference:** Use the same design system defined in `figma_make_prompt_flow2_review_proposals.md` (iPhone 14 Pro viewport 390x844px, chat-based interface, color palette, typography).
 
 ---
 
-## Key Content: 6 AI Reasoning Steps
+## Key Content: 7 AI Reasoning Steps (0-6)
 
 Each step is a separate bubble that appears sequentially in chat. Copy is directly from `AI_reasoning_instruction.md` Output Examples.
+
+### **Step 0: Parse & Confirm User Intent**
+
+**Bubble Label:** `CONFIRMING YOUR INTENT`
+
+**Content (Example 1 - Clear Intent):**
+```
+You want me to make your living room warmer and cozier for family movie nights.
+I'm sensing you like a cozy, intimate mood without it feeling cramped.
+Let me analyze your space and create some designs that bring that warmth.
+```
+
+**Content (Example 2 - Unclear Intent):**
+```
+I want to make sure I understand—when you say "make it nice," are you picturing
+something cozy and comfortable, sleek and modern, or colorful and playful?
+That'll help me create exactly what you're envisioning.
+```
+
+**Visual Notes:**
+- Question mark icon (16x16px, gray) next to step label (optional)
+- Fade-in animation (0.4s)
+- This step appears FIRST before Steps 1-6
+- If intent is unclear, show Example 2 with options and wait for user clarification
+- Once clarified, either return to Step 0 to confirm OR proceed to Step 1
+- If intent is already clear (from onboarding), show Example 1 briefly then proceed
+
+---
 
 ### **Step 1: Read Your Room**
 
@@ -157,32 +185,37 @@ Below you'll see all the products. Ready to explore?
 1. **Create reusable components:**
    - AI Chat Bubble (with step label + content)
    - Step Icon (small, gray, 16x16px)
-   - Progress indicator (Step X/6 in header)
+   - Progress indicator (Step X/7 in header)
 
-2. **Build 8 screens sequentially:**
+2. **Build 10 screens sequentially:**
    - Screen 1: Loading state ("Analyzing your room...")
-   - Screens 2-7: Steps 1-6 appear one at a time
-   - Screen 8: All steps visible + "See 4 Design Options" CTA
+   - Screen 2: Step 0 - Intent Confirmation (clear intent example)
+   - Screen 3: Step 0 - Intent Clarification (unclear intent example with wait state)
+   - Screen 4: Step 0 Clarified → Step 1 begins
+   - Screens 5-9: Steps 1-6 appear one at a time
+   - Screen 10: All steps visible + "See 4 Design Options" CTA
 
 3. **Add animations:**
    - Each step fades in (0.4s ease-in)
    - Sequential delay: 0.8-1.2s between steps
    - Auto-scroll effect: Keep latest message visible
    - No typing animation (show final text)
+   - Step 0 clarification can include a slight pause before auto-advancing
 
 4. **Interactions:**
+   - Screen 3 (unclear intent): Show user response field or button selection for clarification
    - Optional "Next Step" button to advance through screens OR
-   - Auto-play all steps sequentially
+   - Auto-play all steps sequentially (with pause at Step 0 if clarification needed)
 
 ---
 
 ## Design Principles
 
-These 6 steps embed 3 core tone pillars:
+These 7 steps (0-6) embed 3 core tone pillars:
 
-✅ **Transparent:** Observation → Logic → Action shown in each step
-✅ **Conversational:** Present continuous ("I'm thinking...", "I'm looking..."), personal pronouns ("we")
-✅ **Evidence-Based:** Each decision tied to user input (photo, stated goals, budget)
+✅ **Transparent:** Observation → Logic → Action shown in each step. Step 0 makes intent parsing visible.
+✅ **Conversational:** Present continuous ("I'm thinking...", "I'm looking..."), personal pronouns ("we"). Step 0 clarifies without judgment.
+✅ **Evidence-Based:** Each decision tied to user input (photo, stated goals, budget). Step 0 confirms intent before proceeding with analysis.
 
 ---
 
