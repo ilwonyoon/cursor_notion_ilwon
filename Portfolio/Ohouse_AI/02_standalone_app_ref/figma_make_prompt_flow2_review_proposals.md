@@ -2,52 +2,23 @@
 
 ## Project Brief
 
-Create an interactive Figma prototype showing how users review and explore 4 AI-generated design proposals in a chat-based interface. The flow includes:
+Create an interactive Figma prototype showing how users review and explore 4 AI-generated design proposals. The flow includes:
 1. Chat context + 2x2 grid of design thumbnails
 2. Grid interaction (tap any design)
 3. Full-page detail view with design information (products, budget, materials)
 4. Navigation between design options
 
-**Context:** Ohouse AI standalone vision - Flow 2 (Review & Understand AI Proposals). After AI completes 6 reasoning steps, user sees 4 complete design proposals and can explore each one in detail.
+**Context:** Ohouse AI standalone vision - Flow 2 (Review & Understand AI Proposals). After AI completes 6 reasoning steps (Flow 1), user sees 4 design proposals and can explore each in detail.
 
----
+**Design System Reference:** Use design system from `figma_make_prompt_flow1_agentic_reasoning.md`:
+- iPhone 14 Pro viewport (390 x 844px)
+- Chat-based interface colors & typography
+- Same component styles (bubbles, buttons, spacing)
 
-## Design System & Constants
-
-### Viewport & Canvas
-- **Device:** iPhone 14 Pro
-- **Screen size:** 390 x 844px
-- **Safe area:** 20px horizontal padding (effective width: 350px)
-- **Navigation:** Left-to-right push transition when entering detail view
-
-### Color Palette
-- **Background:** #FFFFFF
-- **AI chat bubble bg:** #F5F5F5
-- **AI chat bubble border:** #E0E0E0
-- **Grid background (behind images):** #F9F9F9
-- **Text primary:** #333333
-- **Text secondary:** #999999
-- **Accent (interactive):** #2E7D32
-- **Accent (hover/selected):** #1B5E20
-- **Border/divider:** #E8E8E8
-
-### Typography
-- **Chat header:** 14px bold, #333333
-- **Grid option label:** 12px regular, #666666
-- **Detail view title:** 18px bold, #1A1A1A
-- **Detail section header:** 14px bold, #333333
-- **Detail body text:** 13px regular, #666666
-- **Price/budget:** 14px bold, #2E7D32
-
-### Components
-- **Chat bubble padding:** 16px
-- **Chat bubble margin-bottom:** 12px
-- **Grid item spacing:** 8px (between items)
-- **Grid item corner radius:** 12px
-- **Detail view padding:** 20px
-- **Detail section margin-bottom:** 20px
-- **Button padding:** 12px 16px
-- **Button border-radius:** 8px
+**Flow 2 Specific:**
+- Safe area: 20px horizontal padding (effective width: 350px)
+- 2x2 grid layout with 8px spacing between items
+- Navigation: Left-to-right push transition into detail view
 
 ---
 
@@ -285,76 +256,61 @@ Each detail view should show different:
 - **Back arrow:** Hover state: color to #1B5E20, scale 1.1x
 - **Swipe gesture:** Smooth continuous pan, elastic snap-back if released mid-swipe
 
----
-
-## Responsive & Mobile Considerations
-
-- **Safe area padding:** 20px horizontal throughout
-- **Effective width:** 350px (for content)
-- **Text wrapping:** Accounts for longest strings in UI
-- **Image scaling:** Maintains aspect ratio, scales to fit width
-- **Touch targets:** All buttons/interactive elements ≥48px height minimum
-- **Scrolling:** Natural overflow for long content sections
 
 ---
 
 ## Figma Make Implementation Steps
 
-1. **Create base components:**
-   - Chat bubble (reusable with content slots)
-   - Grid item (image + label)
-   - Product card (reusable)
-   - Section header (reusable)
-   - CTA button (primary + secondary variants)
-   - Material chip (selected + unselected states)
+1. **Create Flow 2 specific components:**
+   - Grid item (image + label, 171x171px each)
+   - Product card (image + name + brand + price + link)
+   - Budget summary box (#F9F9F9 background)
+   - Material option chips (selected/unselected states)
+   - Detail view sections (reusable, themed)
 
 2. **Build Screen 1 (Grid View):**
-   - Chat header + previous messages (faded)
-   - Intro text bubble
-   - 2x2 grid with 4 design thumbnails
-   - Each grid item is interactive/clickable
+   - Chat intro message bubble
+   - 2x2 grid (350px width, 8px spacing)
+   - Each grid item: 171x171px image + 12px label below
+   - All items interactive/tappable
 
-3. **Build Screens 2-5 (Detail Views):**
-   - One detail view template (reusable)
-   - Create 4 variants with different content:
+3. **Build Screens 2-5 (Detail Views for each Option):**
+   - Use one template, create 4 content variants:
      - Option 1: Cozy & Warm
      - Option 2: Open & Playful
      - Option 3: Guest-Friendly
      - Option 4: Bold & Fresh
+   - Each includes: hero image, story text, key additions, products, budget, materials
 
-4. **Add interactions:**
-   - Grid item tap → Navigate to corresponding detail screen
-   - Back arrow → Navigate back to grid
-   - Swipe gestures → Navigate between detail screens
-   - Button taps → Trigger feedback or save actions
+4. **Add Flow 2 interactions:**
+   - Grid item tap → Push transition to detail view (0.4s)
+   - Back arrow → Pop back to grid
+   - Swipe left/right → Navigate between detail screens (0.3s)
+   - Material chip tap → Toggle selection
+   - Primary/secondary buttons → Trigger actions
 
-5. **Add animations:**
-   - Push transition (left-to-right): 0.4s ease-out
-   - Swipe navigation between detail screens: 0.3s ease-out
-   - Button hover states: 0.15s ease-in-out
-   - Micro-interactions on chips, buttons: 0.2s ease-out
-
-6. **Final polish:**
-   - Ensure all shadows, borders, spacing match design system
-   - Verify text wrapping and readability
-   - Test interactive states (hover, pressed, selected)
-   - Confirm navigation flow is smooth and intuitive
+5. **Final checks:**
+   - Grid items properly spaced and sized
+   - Detail view sections scroll naturally
+   - All text readable at specified font sizes
+   - Interactive states clear (hover, selected, pressed)
+   - Navigation smooth and intuitive
 
 ---
 
 ## Success Criteria
 
 When complete, the prototype should:
-1. ✅ Show chat context with 2x2 grid of 4 design proposals
-2. ✅ Allow user to tap any grid item to view full details
-3. ✅ Transition smoothly from grid to detail view (push animation)
-4. ✅ Display comprehensive design information (story, products, budget, materials)
-5. ✅ Allow navigation between detail views (swipe or back + select)
-6. ✅ Show product details with links to Ohouse products
-7. ✅ Display budget transparency (range + flexibility)
-8. ✅ Support material option selection (chips/toggles)
-9. ✅ Provide save & feedback CTAs
-10. ✅ Maintain consistent design system across all screens
-11. ✅ Feel natural and mobile-appropriate (iPhone 14 Pro viewport)
-12. ✅ Demonstrate smooth, responsive interactions
+1. ✅ Show 2x2 grid of 4 design proposal thumbnails
+2. ✅ Grid items tap → detail view push transition (0.4s)
+3. ✅ Display 4 distinct detail views (one per design option)
+4. ✅ Show design story, key additions, products, budget in each detail view
+5. ✅ Allow swipe navigation between detail views (left/right)
+6. ✅ Back arrow returns to grid
+7. ✅ Product cards include: image + name + brand + price + "View on Ohouse" link
+8. ✅ Budget summary clearly shows: total + range + flexibility note
+9. ✅ Material options appear as selectable chips
+10. ✅ Save & Feedback buttons functional/interactive
+11. ✅ Natural mobile UX (iPhone 14 Pro, 350px effective width)
+12. ✅ Smooth transitions and responsive interactions
 
