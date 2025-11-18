@@ -1,5 +1,17 @@
 # PRD: Ohouse AI – Space Personalization Onboarding & Intent Capture (Prototype, Part 1)
 
+## UX Copy Database
+
+**All user-facing copy for this flow is maintained in:** `../04_src/UX_copy_DB_onboarding.md`
+
+For consistency across all prototype screens, refer to the copy DB for:
+- Exact copy for each screen and component
+- Component types and structure
+- Tone guidelines and rationale
+- Dynamic content handling
+
+---
+
 ## Product Overview
 
 **Feature Name:** Ohouse AI – Space Personalization Onboarding & Intent Capture (Prototype, Part 1)
