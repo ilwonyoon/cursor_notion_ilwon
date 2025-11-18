@@ -377,6 +377,27 @@ Use the design-portfolio-evaluator Skill (`.claude/design-portfolio-evaluator/SK
 4. Simulate tough interview questions
 5. Suggest company-tier positioning
 
+### For UX Writing Content (Ohouse Projects)
+Whenever writing or refining UX copy for Ohouse-related content, use the UX-writer Skill (`.claude/skills/UX-writer/`) to ensure brand voice consistency and component-specific guidelines.
+
+**When to invoke:**
+- Writing copy for any Ohouse product feature or onboarding content
+- Refining button text, modal copy, push notifications, tooltips, error messages
+- Creating content for different user journey phases (Planning, Moving, Styling)
+- Ensuring terminology consistency with Ohouse glossary
+
+**What the skill provides:**
+- Brand Tone of Voice guidelines: Empowering, Friendly, Honest
+- Component-specific rules (character limits, formatting, tone)
+- User journey adaptation (different voice mix for each phase)
+- Copy refinement process with alternatives and rationale
+- Red flags and self-check questions
+
+**Example usage:**
+```
+"I'm writing greeting message copy for Ohouse AI onboarding - help me refine this using the UX-writer skill"
+```
+
 ### Syncing `.claude/` Directory Across Devices
 **IMPORTANT:** All files in `.claude/` (skills, commands, settings) must be committed and pushed to GitHub to sync across devices.
 
@@ -468,8 +489,9 @@ Reference `Design_Leadership_Hiring_Framework.md` for structure. Follow the temp
 **Check these docs first:**
 1. `Design_Leadership_Hiring_Framework.md` - Gold standard reference for portfolio structure
 2. `.claude/design-portfolio-evaluator/SKILL.md` - For interactive evaluation of case studies
-3. Ohouse slides (`.md` files in `Ohouse_ai_long_term/`) - See how to frame strategic pivots
-4. Brand 2.0 conversation - Pattern for how to discuss cross-functional leadership
+3. `.claude/skills/UX-writer/` - For Ohouse UX writing (copy refinement, brand voice, components)
+4. Ohouse slides (`.md` files in `Ohouse_ai_long_term/`) - See how to frame strategic pivots
+5. Brand 2.0 conversation - Pattern for how to discuss cross-functional leadership
 
 **Before reviewing any portfolio work:**
 1. Identify target companies (Tier 0/1/2)
