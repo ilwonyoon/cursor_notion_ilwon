@@ -16,8 +16,11 @@ Persona clarity is the linchpin for cross-functional alignment and decision-maki
 - `/Portfolio/Brand_2.0/raw_convo.md` - Core discovery conversation
 - `/Portfolio/Brand_2.0/brand_2.0_what_to_visualize.md` - Visual strategy
 
-**Ohouse_AI** (v7: Multi-Vision Leadership Pitch)
+**Ohouse_AI** (v8: Agentic Reasoning with Intent Parsing)
 Recognized deeper user problem beyond transaction. Strategic pivot: buying products ≠ solving cohesive room design. Got C-level buy-in for data infrastructure investment. Transitioned from managing full design team to IC-level AI product design leadership. One designer empowered with right AI infrastructure achieves outcomes that previously required full team. System architecture enables force multiplication.
+
+**Recent Development - Intent Analyzing Layer (Step 0):**
+Added explicit intent classification & clarification to agentic reasoning flow. Handles unclear/vague user inputs gracefully with non-judgmental clarification before proceeding to 6-step reasoning analysis. Connects to n8n Master Designer agent architecture that classifies task types and routes to specialized teams. Makes invisible AI intelligence visible to users.
 
 **Portfolio Structure (For Hiring @ Tier 0/1):**
 
@@ -37,6 +40,7 @@ This is a **2-Part Leadership Case Study**:
 
 2. **Standalone App Vision: Agentic Design for Global Expansion**
    - Core shift: "Perfect my prompt" → "Give clear feedback" (user mental model change)
+   - 7 Key Steps: (0) Intent Classification, (1-6) Agentic Reasoning
    - 4 Key Flows: (1) Agentic Reasoning, (2) Review Proposals, (3) Feedback Loop, (4) Voting/Confidence
    - Value Prop: Bounded options + feedback loops > endless feed browsing
    - Business Model: Subscription + affiliate + voting data as training signal
@@ -72,9 +76,12 @@ This is a **2-Part Leadership Case Study**:
 - `/Portfolio/Ohouse_AI/01_near_term_vision/Onboarding.md` - Near-term onboarding PRD
 - `/Portfolio/Ohouse_AI/02_standalone_app_ref/⭐_standalone_planning.md` - Standalone vision (Part 1)
 - `/Portfolio/Ohouse_AI/02_standalone_app_ref/⭐_vision_strategy_rationale.md` - Strategic rationale (Part 2)
-- `/Portfolio/Ohouse_AI/02_standalone_app_ref/AI_reasoning.md` - AI reasoning experience design
-- `/Portfolio/Ohouse_AI/04_src/AI_reasoning_instruction.md` - LLM tone & instruction framework
-- `/Portfolio/Ohouse_AI/04_src/UX_writing_db.md` - Unified UX copy database (onboarding + reasoning)
+- `/Portfolio/Ohouse_AI/02_standalone_app_ref/figma_make_prompt_flow1_agentic_reasoning.md` - Figma Make Flow 1 prototype (7 steps: 0-6)
+- `/Portfolio/Ohouse_AI/02_standalone_app_ref/figma_make_prompt_flow2_review_proposals.md` - Figma Make Flow 2 prototype (grid + detail views)
+- `/Portfolio/Ohouse_AI/02_standalone_app_ref/google_stitch_prompt_agentic_reasoning.md` - Google Stitch 10 static mockups
+- `/Portfolio/Ohouse_AI/04_src/AI_reasoning_instruction.md` - LLM tone & instruction framework (Step 0-6)
+- `/Portfolio/Ohouse_AI/04_src/UX_writing_db.md` - Unified UX copy database (onboarding + reasoning steps)
+- `/Portfolio/Ohouse_AI/04_src/Structure - Agents.json` - n8n workflow architecture (Master Designer + 6 specialist teams)
 - `/Daily_note/⭐_11182025_part1_remaining.md` - Mid-term vision exploration notes
 
 **Competitive Differentiation vs. Generic AI Design Tools:**
