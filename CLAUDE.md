@@ -63,9 +63,17 @@ Defines an interactive design leadership portfolio evaluator with:
 ---
 
 ### `/Portfolio/Ohouse_ai_long_term/` — Ohouse AI Long-Term Vision Case Study
-**Location:** `ohouse_ai_long_v2.md` (primary working version) + `arhives/new.md` (ChatGPT iteration for structure reference)
-
 **Target:** Tier 1-2 companies, IC with Leadership level
+
+**Folder Structure:**
+- `01_near_term_vision/` — Near-term product vision and onboarding flows
+- `02_standalone_app_ref/` — Standalone AI app reference and reasoning documentation
+- `03_prop_tech_expansion/` — Property tech expansion vision
+- `ohouse_ai_convo_history/` — Conversation history and ideation (20+ conversations)
+- `arhives/` — Previous versions and raw materials
+- `keyFlows_part1_v1.md` — Key user flows for Part 1
+- `ohouse_ai_memory.md` — Project memory/context documentation
+- `ohouse_ai_pitch_v1.md` — Pitch deck version
 
 **CRITICAL INSTRUCTION FOR ALL WORK ON THIS CASE STUDY:**
 
@@ -94,9 +102,12 @@ When writing/editing Ohouse AI narrative, you MUST follow this principle:
 
 ---
 
-**Working Files:**
-- `ohouse_ai_long_v2.md` — Primary version being built section-by-section (Sections 1-7 framework)
-- `arhives/new.md` — ChatGPT iteration showing structural format (Core Summary + Speaker Script pattern)
+**Primary Working Files:**
+- `01_near_term_vision/Onboarding.md` — Near-term onboarding flows
+- `ohouse_ai_convo_history/20_part1_narrative_v1.md` — Part 1 narrative foundation
+- `ohouse_ai_convo_history/21_part1_hero_5slides_framework.md` — 5-slide hero framework
+- `ohouse_ai_convo_history/22_part1_key_frameworks.md` — Key frameworks and principles
+- `arhives/ohouse_ai_long_v2.md` — Previous full version (reference)
 
 **Narrative Arc (with leadership focus):**
 1. **Foundation:** What's Ohouse + your understanding of user journey
