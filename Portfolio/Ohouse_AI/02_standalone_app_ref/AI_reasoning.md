@@ -93,12 +93,13 @@ Show that the AI has actually “looked at” and understood the user’s room.
 
 * Pattern (example):
 
-  > “I see a medium-sized living room with a low gray sofa, a TV on the right wall, and an open area in the center. There’s no rug yet, and the room feels a bit empty — which is a great opportunity to add warmth.”
+  > "I can see your living room pretty clearly now. You've got a gray sofa, the TV on the right, and that nice open center space. Right now it feels a bit bare, but that's actually perfect—we have lots of room to add warmth and texture without the space feeling cramped."
 
 * The wording should:
 
   * Refer to **visible elements** in the actual photo.
-  * Mention at least one **opportunity or issue** (e.g., “empty center”, “dark corner”).
+  * Connect observation to design possibility (opportunity framing).
+  * Show the designer's thinking: observation → logic → potential.
 
 **Media**
 
@@ -144,15 +145,14 @@ Let the AI “repeat back” the user’s goals, so the user feels understood an
 
 * Pattern (example):
 
-  > “You told me this living room is mainly for family movie nights and relaxing together.
-  > Right now it feels too empty and not cozy enough.
-  > I’ll focus on adding warmth and texture without blocking the TV or making the space feel cramped.”
+  > "You told me this living room is for family movie nights and relaxing together. Right now it feels too empty and not cozy enough. So I'm focusing on adding warmth and texture while keeping the TV view clear and the space open for the kids."
 
 * Must always:
 
-  * Mention the **primary role** of the room.
-  * Mention at least one **pain point**.
-  * Mention at least one **design constraint** (space, budget, kids, etc.) if known.
+  * Reflect back the **primary role** of the room.
+  * Acknowledge the **pain point**.
+  * State **design constraints** as part of the approach (not as restrictions).
+  * Use present continuous ("I'm focusing on...") to show active reasoning.
 
 **Media**
 
@@ -199,16 +199,19 @@ Communicate that the AI is exploring **multiple conceptual directions**, not jus
 
 * Pattern (example):
 
-  > “I’m considering a few directions for this room:
+  > "I'm thinking about three directions for your family space:
   >
-  > 1. A cozy TV-focused layout with a large rug and warm lighting,
-  > 2. A more open layout that keeps the center free for kids to play,
-  > 3. A slightly more formal layout with accent chairs for guests.
-  >    I’ll turn these into visual options next.”
+  > 1. **Cozy, TV-focused room** – Large rug and warm lights prioritizing your movie nights.
+  > 2. **Open and playful** – Center stays clear for the kids to move around freely.
+  > 3. **Guest-friendly** – Adds accent chairs for when you have people over, slightly more formal.
+  >
+  > Each of these balances your needs differently. Let me turn these into visual designs so you can see them in action."
 
 * Room- and goal-specific:
 
-  * Use words that match their context (kids, storage, guests, etc.).
+  * State what each direction **prioritizes** (not just lists features).
+  * Explicitly frame **trade-offs** ("each balances your needs differently").
+  * Connect to their stated goals (movie nights, kids, guests, etc.).
 
 **Media**
 
@@ -253,13 +256,13 @@ Show that the AI is now grounding ideas in **real products and budget**, not jus
 
 * Pattern (example):
 
-  > “Now I’m finding rugs sized for your living room, sofa-side lamps that won’t block the TV, and cushions that warm up your gray sofa.
-  > I’m keeping things in a mid-price range unless you tell me otherwise.”
+  > "I'm sourcing real products that match this direction. I'm looking at rugs that fit your room's center space, lamps for next to your sofa that won't block your TV view, and cushions to warm up that gray sofa. I'm staying in the mid-range because you didn't mention budget concerns, so this approach gives you good value without overcommitting."
 
 * Must convey:
 
-  * What categories it’s currently searching (rugs, lamps, cushions, etc.).
-  * How it’s treating **budget and constraints**.
+  * What categories are being sourced and **why** they fit this room/direction.
+  * How **constraints** (room size, TV sightline, budget) drive product selection.
+  * The reasoning behind the **budget band choice**.
 
 **Media**
 
@@ -304,16 +307,18 @@ Make feedback the **center of the agentic loop**, not prompt engineering.
 
 * Intro text:
 
-  > “Here are four directions for your living room based on what you told me.
-  > • Option 1 adds a large rug and warm lighting for movie nights.
-  > • Option 2 keeps the center open for kids to play.
-  > • Option 3 adds more storage along the TV wall.
-  > • Option 4 is a bolder style with more color.
-  > Tell me what you like or don’t like – and feel free to tap on specific areas in each image so I can adjust just that part.”
+  > "Here are four ways to design your living room based on what you told me. Each one balances your needs differently.
+  >
+  > • **Option 1:** Movie-night focused – big rug and warm lights for comfort
+  > • **Option 2:** Open and playful – middle stays clear for the kids
+  > • **Option 3:** Organized – includes storage along the TV wall
+  > • **Option 4:** Bolder style – more color and personality
+  >
+  > You can tap any area in each image to see more details or point out what appeals to you and what doesn't."
 
 * After user feedback (inline):
 
-  > “Got it – I’ll keep the rug and sofa from Option 2, but change the lamp and wall art to something softer.”
+  > "I'm keeping the open layout and rug from Option 2 since that's working well, and I'm adjusting the lamps and wall art to be warmer and softer. This brings together the openness you liked with the coziness you're after."
 
 **Media**
 
@@ -371,10 +376,15 @@ Summarize the **final result** clearly and connect it to products and execution.
 
 * Pattern (example):
 
-  > “Here’s your final living room plan based on Option 2 with a lighter rug and warmer lamps.
-  > • Total budget: around $1,200 (can go lower if we swap a few items).
-  > • Key changes: add a 200×290cm rug, two floor lamps, wall art above the sofa, and a small storage unit for toys.
-  > I’ll show you all the products I used below – you can replace any item you’re not sure about.”
+  > "Here's your transformed living room. We're building on the open, cozy direction you liked, with a lighter rug and warmer lighting that brings out the family warmth you wanted.
+  >
+  > **The main additions:**
+  > • Large rug (200×290cm) to anchor the center and soften the space
+  > • Two floor lamps for warmth and flexible lighting
+  > • Wall art above the sofa to add personality and fill blank walls
+  > • Toy storage unit along the TV wall to keep things organized
+  >
+  > **Total budget:** Around $1,200 (flexible—we can swap items to adjust up or down). Below you'll see all the products I selected. Everything's replaceable, so you have full control over the final picks."
 
 **Media**
 

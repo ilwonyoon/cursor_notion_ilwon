@@ -214,3 +214,136 @@ This DB covers **Onboarding Part 1** (Steps 1-5).
 - Product filtering and sorting copy
 
 ---
+
+---
+
+# Part 2: Standalone App Reference – AI Reasoning Flow
+
+**Prototype Scope:** Reasoning steps 1-6 for the AI interior designer assistant
+**Tone Reference:** Transparent, Conversational, Evidence-Based (See `AI_reasoning_instruction.md`)
+
+---
+
+## Step 1: Read Your Room
+
+**Page ID:** `reasoning_step_1_read_room`
+**Description:** AI observes the room and expresses its understanding to the user
+**Tone:** Transparent + Conversational
+
+| Copy Key | Component Type | Text Value | Tone Notes |
+|----------|----------------|------------|-----------|
+| `step1_observation_and_possibility` | body | I can see your living room pretty clearly now. You've got a gray sofa, the TV on the right, and that nice open center space. Right now it feels a bit bare, but that's actually perfect—we have lots of room to add warmth and texture without the space feeling cramped. | Shows observation → logic → possibility. Conversational tone ("that's actually perfect"). Connects observation to design potential. |
+
+---
+
+## Step 2: Frame Your Goals & Constraints
+
+**Page ID:** `reasoning_step_2_frame_goals`
+**Description:** AI reflects back the user's goals and constraints to show understanding
+**Tone:** Conversational + Evidence-Based
+
+| Copy Key | Component Type | Text Value | Tone Notes |
+|----------|----------------|------------|-----------|
+| `step2_brief_summary` | body | You told me this living room is for family movie nights and relaxing together. Right now it feels too empty and not cozy enough. So I'm focusing on adding warmth and texture while keeping the TV view clear and the space open for the kids. | Reflects back their role, pain, and constraints. Present continuous ("I'm focusing on") shows active reasoning. States constraints as part of solution, not restrictions. |
+
+---
+
+## Step 3: Explore Layout & Style Options
+
+**Page ID:** `reasoning_step_3_explore_directions`
+**Description:** AI presents multiple design directions with explicit trade-offs
+**Tone:** Transparent + Conversational
+
+| Copy Key | Component Type | Text Value | Tone Notes |
+|----------|----------------|------------|-----------|
+| `step3_directions_intro` | heading | I'm thinking about three directions for your family space | Present continuous, exploratory tone. |
+| `step3_option_1` | list_item | **Cozy, TV-focused room** – Large rug and warm lights prioritizing your movie nights. | Bold label for clarity. States what direction prioritizes (movie nights). |
+| `step3_option_2` | list_item | **Open and playful** – Center stays clear for the kids to move around freely. | Tied to their stated need (kids). |
+| `step3_option_3` | list_item | **Guest-friendly** – Adds accent chairs for when you have people over, slightly more formal. | Addresses their secondary goal (guests). |
+| `step3_balance_statement` | body | Each of these balances your needs differently. Let me turn these into visual designs so you can see them in action. | Explicitly frames trade-offs. Collaborative ("Let me turn these..."). |
+
+---
+
+## Step 4: Match Products to Your Room
+
+**Page ID:** `reasoning_step_4_source_products`
+**Description:** AI explains which product categories it's sourcing and why
+**Tone:** Transparent + Evidence-Based
+
+| Copy Key | Component Type | Text Value | Tone Notes |
+|----------|----------------|------------|-----------|
+| `step4_sourcing_intro` | body | I'm sourcing real products that match this direction. I'm looking at rugs that fit your room's center space, lamps for next to your sofa that won't block your TV view, and cushions to warm up that gray sofa. | Explains WHY each product category: room specs, constraints (TV sightline). Shows thinking linked to room analysis. |
+| `step4_budget_explanation` | body | I'm staying in the mid-range because you didn't mention budget concerns, so this approach gives you good value without overcommitting. | Explains budget choice based on onboarding input. "Good value" = transparent reasoning. |
+
+---
+
+## Step 5a: Refine with Your Feedback – Intro
+
+**Page ID:** `reasoning_step_5a_design_options`
+**Description:** AI presents 4 design options with clear descriptions
+**Tone:** Conversational + Evidence-Based
+
+| Copy Key | Component Type | Text Value | Tone Notes |
+|----------|----------------|------------|-----------|
+| `step5a_intro_opening` | heading | Here are four ways to design your living room based on what you told me. Each one balances your needs differently. | Acknowledges user input. Frames trade-offs early. |
+| `step5a_option_1` | list_item | **Option 1:** Movie-night focused – big rug and warm lights for comfort | Tied to their stated role. "for comfort" shows benefit. |
+| `step5a_option_2` | list_item | **Option 2:** Open and playful – middle stays clear for the kids | Addresses their stated need. |
+| `step5a_option_3` | list_item | **Option 3:** Organized – includes storage along the TV wall | Addresses implied pain point (empty, needs organization). |
+| `step5a_option_4` | list_item | **Option 4:** Bolder style – more color and personality | Addresses "not cozy enough" pain point (personality/color). |
+| `step5a_interaction_hint` | body | You can tap any area in each image to see more details or point out what appeals to you and what doesn't. | Clear interaction instruction. Invitation without interrogation. |
+
+---
+
+## Step 5b: Refine with Your Feedback – Response
+
+**Page ID:** `reasoning_step_5b_feedback_response`
+**Description:** AI acknowledges feedback and adjusts its design
+**Tone:** Conversational + Evidence-Based + Transparent
+
+| Copy Key | Component Type | Text Value | Tone Notes |
+|----------|----------------|------------|-----------|
+| `step5b_adjustment_response` | body | I'm keeping the open layout and rug from Option 2 since that's working well, and I'm adjusting the lamps and wall art to be warmer and softer. This brings together the openness you liked with the coziness you're after. | Acknowledges what's working. Describes specific adjustments. Ties changes to their stated preference ("openness you liked") + goal ("coziness you're after"). |
+
+---
+
+## Step 6: Prepare the Final Plan
+
+**Page ID:** `reasoning_step_6_final_plan`
+**Description:** AI summarizes the final design and connects it back to user's journey
+**Tone:** Conversational + Evidence-Based + Transparent
+
+| Copy Key | Component Type | Text Value | Tone Notes |
+|----------|----------------|------------|-----------|
+| `step6_celebration` | heading | Here's your transformed living room. We're building on the open, cozy direction you liked, with a lighter rug and warmer lighting that brings out the family warmth you wanted. | Celebrates transformation. "You liked", "you wanted" emphasizes their agency. References their original pain point (family warmth). |
+| `step6_additions_title` | heading | The main additions | Clear section label. |
+| `step6_addition_rug` | list_item | Large rug (200×290cm) to anchor the center and soften the space | Size + purpose. Shows how it solves "bare center" problem. |
+| `step6_addition_lamps` | list_item | Two floor lamps for warmth and flexible lighting | Purpose tied to their goal (warmth) + functionality. |
+| `step6_addition_art` | list_item | Wall art above the sofa to add personality and fill blank walls | Addresses "blank walls need character" observation from Step 1. |
+| `step6_addition_storage` | list_item | Toy storage unit along the TV wall to keep things organized | Addresses functional need (organization) implied by "kids". |
+| `step6_budget_label` | heading | Total budget | Clear section label. |
+| `step6_budget_amount` | body | Around $1,200 (flexible—we can swap items to adjust up or down). Below you'll see all the products I selected. Everything's replaceable, so you have full control over the final picks. | Transparent about flexibility. Emphasizes user control ("you have full control"). |
+
+---
+
+## Tone Guidelines Applied: Part 2 (AI Reasoning)
+
+### 3 Core Tone Pillars (AI Reasoning Specific)
+
+**1. Transparent (투명성)**
+- Every decision shows its reasoning: "I'm looking for [category] that [fits constraint]"
+- Observation → Logic → Action chain is visible
+- Trade-offs are explicitly named: "Each of these balances your needs differently"
+
+**2. Conversational (대화식)**
+- Present continuous tense ("I'm thinking...", "I'm focusing on...") to show active thought
+- Reflects user's words back ("You told me...", "openness you liked")
+- Avoids questions during reasoning (permission steps ask, not reasoning)
+- Feels like thinking partner, not information delivery system
+
+**3. Evidence-Based (근거 기반)**
+- All decisions traceable to user input or room constraints
+- Links back to their stated goals: "for family movie nights", "for the kids"
+- Acknowledges their pain points: "family warmth you wanted", "fill blank walls"
+- Each change explained with reason: "to anchor the center", "to add personality"
+
+---
