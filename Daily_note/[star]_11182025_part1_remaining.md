@@ -61,7 +61,51 @@ This is the **transition from consumption → self-creation → conversational c
 
 Standalone App Key Flows
 
-## 1. Feedback as the Center of the Experience
+## 1. Reasoning for AI interior designer
+
+In the standalone app, the **user journey starts similarly**:
+
+* Answer some questions.
+* Upload photos of your room.
+
+But instead of generating a **personalized feed**, the system:
+
+* Generates **design results** for your room.
+* Lets you **pick from (say) 3–4 top candidates**.
+* Encourages you to refine those designs rather than “browse endless products”.
+
+### Designing When and How the Agent Interacts
+
+We need explicit logic for:
+
+* **When to interrupt**:
+
+  * When do we ask for permission?
+  * When do we suggest a new iteration vs waiting for user input?
+* **What kind of progress to show**:
+
+  * We don’t want a black-box spinner.
+  * We want meaningful **steps**.
+
+I’m taking inspiration from tools like **Claude Code** and **Cursor**:
+
+For Ohouse AI, we need to:
+
+* Design the **agentic process UI**:
+
+  * What intermediate states do we show while the AI is working?
+  * How do we visually express:
+
+    * “Analyzing your room.”
+    * “Exploring layout options.”
+    * “Matching products to your budget and taste.”
+* Avoid overwhelming the user with internal details, but give:
+
+  * Enough visibility to build confidence.
+  * Clear sense that **real work is happening on their behalf**.
+
+
+## 2. Feedback as the Center of the Experience
 
 For this mid-term standalone app, the **feedback process is the critical second pillar** after AI reasoning.
 
@@ -98,104 +142,7 @@ At this point, the experience becomes:
 
 ---
 
-## 4. Image-Level Feedback: Inline “Editor” for Visual Design
 
-For interior design, **whole-image feedback is not enough**.
-
-Users rarely feel “I like or dislike this entire image.” They usually mean:
-
-* “I love this **sofa area**, but I hate the **curtains**.”
-* “This **corner** looks perfect; this **wall** feels empty.”
-* “This **rug** is great, but that **table** is too big.”
-
-So we need:
-
-### Image Selector as Inline Editor
-
-* An **image selector** that lets users:
-
-  * Select a **specific area** of the image.
-  * Talk about **that part**:
-
-    * What they like.
-    * What they don’t like.
-    * What they want to try instead.
-
-This is analogous to a **code editor with inline edits**:
-
-* In code:
-
-  * You can write code yourself.
-  * Or you can ask the AI to **change a specific block**.
-* In this product:
-
-  * You can edit the room manually (Room Planner).
-  * Or you can **select a region in the generated image** and say:
-
-    * “Change this lamp.”
-    * “Soften this color palette.”
-    * “Make this corner kid-friendly.”
-
-This **inline selection + feedback** must become part of the **user’s long-term memory**:
-
-* The AI should learn:
-
-  * You usually prefer warm lighting.
-  * You dislike overly busy walls.
-  * You prioritize kid safety in certain zones.
-* That context should **carry across iterations and rooms**.
-
----
-
-## 5. Designing the Agentic Process & Progress Visualization
-
-In the standalone app, the **user journey starts similarly**:
-
-* Answer some questions.
-* Upload photos of your room.
-
-But instead of generating a **personalized feed**, the system:
-
-* Generates **design results** for your room.
-* Lets you **pick from (say) 3–4 top candidates**.
-* Encourages you to refine those designs rather than “browse endless products”.
-
-### Designing When and How the Agent Interacts
-
-We need explicit logic for:
-
-* **When to interrupt**:
-
-  * When do we ask for permission?
-  * When do we suggest a new iteration vs waiting for user input?
-* **What kind of progress to show**:
-
-  * We don’t want a black-box spinner.
-  * We want meaningful **steps**.
-
-I’m taking inspiration from tools like **Claude Code** and **Cursor**:
-
-* Claude Code:
-
-  * Shows its **thought process and iterations** clearly: planning, editing, running, fixing.
-* Cursor:
-
-  * Displays its operations in **different, more compact ways**.
-
-For Ohouse AI, we need to:
-
-* Design the **agentic process UI**:
-
-  * What intermediate states do we show while the AI is working?
-  * How do we visually express:
-
-    * “Analyzing your room.”
-    * “Exploring layout options.”
-    * “Matching products to your budget and taste.”
-* Avoid overwhelming the user with internal details, but give:
-
-  * Enough visibility to build confidence.
-  * Clear sense that **real work is happening on their behalf**.
 
 ### What to Show vs What to Hide
 
