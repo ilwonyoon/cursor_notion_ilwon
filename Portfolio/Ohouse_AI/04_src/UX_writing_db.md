@@ -1,11 +1,25 @@
-# UX Copy DB – Onboarding Flow
+# UX Writing DB – Ohouse AI Prototypes
 
 ## Overview
 
-- **Flow:** Ohouse AI Space Personalization Onboarding & Intent Capture (Prototype, Part 1)
-- **Prototype Scope:** Living Room (extensible to other space types)
-- **Tone Reference:** Friendly, Empowering, Honest (Ohouse UX Writing Principles)
-- **For AI Reasoning:** See `AI_reasoning_instruction.md` for Tone of Voice framework and LLM instructions
+**Unified UX Copy Database for all Ohouse AI prototypes:**
+
+### Scope
+- **01. Near-term Vision:** Space Personalization Onboarding & Intent Capture (Prototype, Part 1)
+- **02. Standalone App Reference:** AI Reasoning Experience
+- **03. Property Tech Expansion:** Future prototype scope
+
+### Tone Reference
+- Friendly, Empowering, Honest (Ohouse UX Writing Principles)
+- For AI Reasoning-specific tone: See `AI_reasoning_instruction.md` for Tone of Voice framework and LLM instructions
+
+---
+
+---
+
+# Part 1: Near-term Vision – Onboarding Flow
+
+**Prototype Scope:** Living Room (extensible to other space types)
 
 ---
 

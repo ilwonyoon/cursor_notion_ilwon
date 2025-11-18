@@ -2,7 +2,12 @@
 
 ## UX Copy Database
 
-**All user-facing copy for this flow is maintained in:** `../04_src/UX_copy_DB_onboarding.md`
+**All user-facing copy for Ohouse AI prototypes is maintained in:** `../04_src/UX_writing_db.md`
+
+This unified database covers:
+- Near-term vision (Onboarding, Part 1)
+- Standalone app reference (AI Reasoning)
+- Property tech expansion (Future)
 
 For consistency across all prototype screens, refer to the copy DB for:
 - Exact copy for each screen and component
