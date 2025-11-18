@@ -62,7 +62,7 @@ Defines an interactive design leadership portfolio evaluator with:
 
 ---
 
-### `/Portfolio/Ohouse_ai_long_term/` — Ohouse AI Long-Term Vision Case Study
+### `/Portfolio/Ohouse_AI/` — Ohouse AI Long-Term Vision Case Study
 **Target:** Tier 1-2 companies, IC with Leadership level
 
 **Folder Structure:**
