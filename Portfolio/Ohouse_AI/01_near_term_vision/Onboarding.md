@@ -1,5 +1,22 @@
 # PRD: Ohouse AI – Space Personalization Onboarding & Intent Capture (Prototype, Part 1)
 
+## Executive Context: Why This Experience Design
+
+이 onboarding 경험은 core user problem을 해결한다:
+Users see beautiful interior inspiration online but struggle to translate those ideas to their own space—and crucially, lack confidence to execute (purchase decisions for 5k–100k investments). Photo analysis alone can't understand user intent; explicit questions alone lose room context.
+
+The design insight: **Photo + 2 lightweight questions during AI analysis = sufficient signal for personalized recommendations without adding friction.**
+
+This near-term experience validates:
+- AI reasoning capability (photo analysis quality)
+- Intent understanding accuracy (from structured questions)
+- Product matching relevance (does personalization actually work?)
+- User confidence in recommendations (behavioral signal)
+
+All of these become the foundation tech stack that Standalone agentic design will reuse and evolve globally.
+
+---
+
 ## UX Copy Database
 
 **All user-facing copy for Ohouse AI prototypes is maintained in:** `../04_src/UX_writing_db.md`
